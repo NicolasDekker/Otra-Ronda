@@ -1,0 +1,26 @@
+{
+    "mapas": [
+        {
+            "titulo": "PINTURERÍA CROMATIK",
+            "ubicacion": "https://maps.app.goo.gl/Ra34N8JBEos8fxg97",
+            "direccion": "Bueno Aires, Gonnet, Gral. Belgrano y 517",
+            "telefono": "221 484 7500",
+            "whatsapp": "https://wa.me/5492213632332",
+            "numWhatsapp": "2213632332",
+            "mail": "mailto:cromatik.belgrano@cromatik.com.ar",
+            "email": "cromatik.belgrano@cromatik.com.ar",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.4375648685273!2d-57.99688352351923!3d-34.89546717296599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e770ed531aeb%3A0x134512f20954455a!2sCno.%20Gral.%20Manuel%20Belgrano%20%26%20C.%20517%2C%20B1897%20Gonnet%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1701960439159!5m2!1ses-419!2sar"
+        },
+        {
+            "titulo": "PINTURERÍA CROMATIK",
+            "ubicacion": "https://maps.app.goo.gl/Cm9Sv9E4XnYdVPMk6",
+            "direccion": "Bueno Aires, La Plata, calle 74 Nº1354",
+            "telefono": "221 427 7297",
+            "whatsapp": "https://wa.me/5492215579087",
+            "numWhatsapp": "2215579087",
+            "mail": "mailto:cromatik.diagonal@cromatik.com.ar",
+            "email": "cromatik.diagonal@cromatik.com.ar",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3271.7196695011066!2d-57.95784252351849!3d-34.913483873924925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDU0JzQ4LjYiUyA1N8KwNTcnMTkuMCJX!5e0!3m2!1ses-419!2sar!4v1701961229097!5m2!1ses-419!2sar"
+        }
+    ]
+}
