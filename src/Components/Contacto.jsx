@@ -6,7 +6,7 @@ const Contacto = () => {
   
   return (
     <div>
-      Contacto
+      Contactooo
     </div>
   );
 };

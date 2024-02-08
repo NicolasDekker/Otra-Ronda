@@ -6,7 +6,7 @@ const Footer = () => {
   
   return (
     <div>
-      Footer
+      Footerrr
     </div>
   );
 };
