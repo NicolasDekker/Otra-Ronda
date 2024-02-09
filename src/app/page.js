@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 const homePage = () => {
   return (
     <div>
-      <title>CROMATIK</title>
+      <title>Otra Ron'da</title>
         <Navbar />
         <Home />
         <Productos />
