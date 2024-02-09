@@ -6,7 +6,7 @@ const SobreNosotros = () => {
   
   return (
     <div>
-      SobreNosotros
+      Sobre Nosotrossss
     </div>
   );
 };

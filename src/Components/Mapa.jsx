@@ -6,7 +6,7 @@ const Mapa = () => {
   
   return (
     <div>
-      Mapa
+      Mapaaa
     </div>
   );
 };
