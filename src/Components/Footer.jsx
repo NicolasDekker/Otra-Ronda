@@ -1,13 +1,46 @@
-"use client";
 import React from "react";
-
+import Image from "next/image";
+import Link from "next/link";
+import { FaInstagram } from "react-icons/fa";
+import { LuFacebook } from "react-icons/lu";
 
 const Footer = () => {
-  
   return (
-    <div>
-      Footerrr
-    </div>
+    <footer>
+      <div id="contenedor" className="bg-c_cromatik h-20 flex justify-between">
+        <div id="logo">
+          <Link href="#home">
+            <Image
+              src="/img/1 otra-ronda.png"
+              width={150}
+              height={150}
+              alt="Logo-Footer"
+            />
+          </Link>
+        </div>
+
+        <div id="social_media_i" className="flex flex-row my-10 pr-3 md:pr-10 ">
+          <div id="i_facebook">
+            <Link target='_blank' rel="noopener noreferrer" href={'https://www.facebook.com/CromatikPinturerias'}>
+              <LuFacebook className="text-4xl mr-3 text-yellow-500 hover:text-c_cromatik_blue_bttn_hover" />
+            </Link>
+          </div>
+
+          <div id="i_instagram">
+            <Link target='_blank' rel="noopener noreferrer" href={'https://www.instagram.com/otraronda.ok/'}>
+              <FaInstagram className="text-4xl mr-3 text-yellow-500 hover:text-c_cromatik_blue_bttn_hover" />
+            </Link>
+          </div>
+        </div>
+
+      </div>
+      <div className=' pt-3 bg-c_cromatik flex flex-col md:justify-center md:flex-row text-sm'>
+        <p className='text-white text-center font-swiss'>Otra Ron´da - Todos los derechos reservados.</p>
+        <Link target='_blank' rel="noopener noreferrer" href={"https://www.aprin.com.ar/"}>
+          <p className='text-white text-center font-swiss ml-1 hover:font-bold '>Realizado por: APRIN</p>
+        </Link>
+      </div>
+    </footer>
   );
 };
 
