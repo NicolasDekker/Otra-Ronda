@@ -1,19 +1,44 @@
 "use client";
-import React, { useRef } from "react";
-import Image from "next/image";
-
+import React from "react";
+import { useEffect, useState } from 'react';
 
 const Home = () => {
-  const videoRef = useRef(null);
+  const imageURL = "img/bg-home/image-4.jpg";
+  const imageURLMobile = "/img/bg-home/image-12.jpg";
+  const [backgroundImage, setBackgroundImage] = useState(imageURL);
 
-  const handleVideoEnd = () => {
-    setTimeout(() => {
-      videoRef.current.play();
-    }, 3000); // 3000 milisegundos = 3 segundos
-  };
-  
+  useEffect(() => {
+    const handleResize = () => {
+      setBackgroundImage(window.innerWidth <= 768 ? imageURLMobile : imageURL);
+    };
+    
+    window.addEventListener('resize', handleResize);    
+    handleResize();    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [imageURL, imageURLMobile]);
+
   return (
-    <div className="relative text-yellow-500 flex justify-center h-[820px]">
+    <div
+      id="home"
+      className="h-screen bg-cover bg-center flex items-center p-5 w-auto "
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+      }}
+    >
+      <div className="flex flex-col items-center ">
+      
+        <div className="flex flex-col items-center text-white">
+          <h1 className="text-yellow-200 font-porsche text-6xl mb-10 md:mt-20 text-center 3xl:text-8xl">Otra Ron'da</h1></div>
+          <p className="text-yellow-200 text-center sm:px-16 md:px-32 md:text-2xl 2xl:w-3/4 3xl:w-1/2 mt-32 md:mt-8 lg:w-2/3 text-xl font-swiss">
+          Shipplog es una empresa que se originó con el propósito de brindar soporte a otras empresas locales en el rubro logístico y de aprovisionamiento. Contamos con una infraestructura moderna y tecnológica, que nos permite optimizar los procesos y reducir los costos operativos de tu empresa.
+          </p> 
+      </div>
+    </div>
+  );
+};
+{/* <div className="relative text-yellow-500 flex justify-center h-[820px]">
       <h1 className="absolute top-48 left-0 right-0 z-10 text-center text-4xl font-bold mt-8">Título Aquí</h1>
       <Image
         src="/img/otra-1.jpg"
@@ -31,8 +56,6 @@ const Home = () => {
         height={820}
         alt="Logo-Footer"
       />
-    </div>
-  );
-};
+    </div> */}
 
 export default Home

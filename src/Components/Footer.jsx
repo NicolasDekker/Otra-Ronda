@@ -7,7 +7,7 @@ import { LuFacebook } from "react-icons/lu";
 const Footer = () => {
   return (
     <footer>
-      <div id="contenedor" className="bg-c_cromatik h-20 flex justify-between">
+      <div id="contenedor" className="bg-black h-20 flex justify-between">
         <div id="logo">
           <Link href="#home">
             <Image
@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
 
       </div>
-      <div className=' pt-3 bg-c_cromatik flex flex-col md:justify-center md:flex-row text-sm'>
+      <div className=' pt-3 bg-black flex flex-col md:justify-center md:flex-row text-sm'>
         <p className='text-white text-center font-swiss'>Otra Ron´da - Todos los derechos reservados.</p>
         <Link target='_blank' rel="noopener noreferrer" href={"https://www.aprin.com.ar/"}>
           <p className='text-white text-center font-swiss ml-1 hover:font-bold '>Realizado por: APRIN</p>
