@@ -5,7 +5,7 @@ import React from "react";
 const SobreNosotros = () => {
   
   return (
-    <div>
+    <div id="nosotros" className="h-screen text-yellow-500">
       Sobre Nosotrossss
     </div>
   );

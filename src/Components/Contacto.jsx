@@ -5,8 +5,8 @@ import data from "../data/services.json";
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contacto = () => {
-  const imageURL = "img/form-final-desktop-op.png";
-  const imageURLMobile = "img/form-final-tablet-op.png";
+  const imageURL = "img/bg-home/image-7.jpg";
+  const imageURLMobile = "img/bg-home/image-11.jpg";
   const form = useRef();
   const [backgroundImage, setBackgroundImage] = useState(imageURL);
   // const [servicios, setServicios] = useState([]);
@@ -142,16 +142,15 @@ const Contacto = () => {
           
         </div>
 
-        <div className="bg-c_cromatik_gray_bg opacity-90 w-full lg:w-[40%] md:w-[50%] p-2 rounded-2xl border-4 border-c_cromatik_gray_border h-auto font-lato text-black">
+        <div className="bg-c_cromatik_gray_bg bg-opacity-50 w-full lg:w-[50%] md:w-[50%] p-2 rounded-2xl border-4 border-c_cromatik_gray_border h-auto font-lato text-black">
           <form ref={form} onSubmit={handleSubmit} className="flex flex-col items-center justify-center p-2">
-            <h1 className="text-white text-[35px] md:text-[40px] uppercase font-montserrat font-bold">Contactanos</h1>
-            <h3 className="text-white text-[15px] md:text-[18px] text-center">Será un gran privilegio para nosotros poder brindarle asesoramiento a medida.</h3>
+            <h1 className="text-yellow-500 text-[35px] md:text-[40px] uppercase font-montserrat font-bold">Contactanos</h1>
 
             <div className="pt-4 w-full md:p-4">
-              <p className="text-white text-center text-[16px] md:text-[17px]">Nombre completo *</p>
-              <div className="flex w-full justify-between  pt-2">
-              <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px]" type="text" id="nombre" placeholder="Nombre" name="nombre" />
-                <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px]" type="text" id="apellido" placeholder="Apellido" name="apellido" />
+              <p className="text-yellow-500 text-center text-[16px] md:text-[17px]">Nombre completo *</p>
+              <div className="flex w-full justify-between pt-2">
+              <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-yellow-500" type="text" id="nombre" placeholder="Nombre" name="nombre" />
+                <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-yellow-500" type="text" id="apellido" placeholder="Apellido" name="apellido" />
               </div>
               {validationErrors.nombreCompleto && (
                 <div className="text-red-400 font-bold text-center">
@@ -161,9 +160,9 @@ const Contacto = () => {
             </div>
 
             <div className="pt-4 w-full md:p-4">
-              <p className="text-white text-center text-[16px] md:text-[17px]">Email *</p>
+              <p className="text-yellow-500 text-center text-[16px] md:text-[17px]">Email *</p>
               <div className="flex w-full justify-center pt-2">
-                <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px]" type="text" id="mail" placeholder="Ingrese mail donde desea ser contactado" name="mail" />
+                <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-yellow-500" type="text" id="mail" placeholder="Ingrese mail donde desea ser contactado" name="mail" />
               </div>
               {validationErrors.mail && (
                 <div className="text-red-400 font-bold text-center">
@@ -173,9 +172,9 @@ const Contacto = () => {
             </div>
 
             <div className="pt-4 w-full md:p-4">
-              <p className="text-white text-center text-[16px] md:text-[17px]">Teléfono</p>
+              <p className="text-yellow-500 text-center text-[16px] md:text-[17px]">Teléfono</p>
               <div className="flex w-full justify-center pt-2">
-                <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px]" type="text" id="tel" placeholder="Ingrese número de teléfono" name="tel" />
+                <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-yellow-500" type="text" id="tel" placeholder="Ingrese número de teléfono" name="tel" />
               </div>
               {validationErrors.tel && (
                 <div className="text-red-400 font-bold text-center">
@@ -185,9 +184,18 @@ const Contacto = () => {
             </div>
 
             <div className="pt-4 w-full md:p-4">
-              <p className="text-white text-center text-[16px] md:text-[17px]">¿Por cuál servicio nos contacta?</p>
+              <p className="text-yellow-500 text-center text-[16px] md:text-[17px]">¿Por cuál servicio nos contacta?</p>
               <div className="flex w-full justify-center pt-2">
-                <select name="servicio" id="servicio" className="rounded-md p-1 w-full text-[14px] md:text-[16px]">
+                <select 
+                  name="servicio" 
+                  id="servicio" 
+                  defaultValue="Elige una opción" 
+                  className="rounded-md p-1 w-full text-[14px] md:text-[16px] bg-black text-white"
+                  onChange={(e) => {
+                    e.target.style.color = e.target.value === "Elige una opción" ? "white" : "yellow";
+                  }}
+                  >
+                    <option  value="Elige una opción" disabled hidden className="">Elige una opción</option>
                   {servicios.map(servicio => (
                     <option key={servicio.id} value={servicio.categoria}>
                       {servicio.categoria}
@@ -199,9 +207,9 @@ const Contacto = () => {
             </div>
 
             <div className="pt-4 w-full md:p-4">
-              <p className="text-white text-center text-[16px] md:text-[17px]">Mensaje</p>
+              <p className="text-yellow-500 text-center text-[16px] md:text-[17px]">Mensaje</p>
               <div className="flex w-full justify-center pt-2">
-                <textarea className="w-full rounded-md p-1 text-[14px] md:text-[16px]" type="text" id="mensaje" placeholder="Ingrese su consulta" name="mensaje" />
+                <textarea className="w-full rounded-md p-1 text-[14px] md:text-[16px] bg-black text-yellow-500" type="text" id="mensaje" placeholder="Ingrese su consulta" name="mensaje" />
               </div>
               {validationErrors.mensaje && (
                 <div className="text-red-400 font-bold text-center">
@@ -212,7 +220,7 @@ const Contacto = () => {
 
             <button
               type="submit" 
-              className="text-white bg-black z-10 rounded-xl p-2 mt-4 m-2 w-full  hover:bg-yellow-500  font-montserrat font-bold text-[16px] md:text-[17px]"
+              className="text-yellow-500 bg-black z-10 rounded-xl p-2 mt-4 m-2 w-64 md:w-96 hover:bg-yellow-500 hover:text-black font-montserrat font-bold text-[16px] md:text-[17px]"
             >
               Enviar consulta
               </button>
