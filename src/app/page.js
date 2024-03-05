@@ -13,8 +13,9 @@ const homePage = () => {
         <Navbar />
         <Home />
         <Servicios />
-        <Contacto />
         <SobreNosotros />
+        <Contacto />
+        
         <Footer /> 
     </div>
   );

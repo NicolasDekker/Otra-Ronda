@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setBackgroundImage(window.innerWidth <= 768 ? imageURLMobile : imageURL);
+      setBackgroundImage(window.innerWidth <= 767 ? imageURLMobile : imageURL);
     };
     
     window.addEventListener('resize', handleResize);    

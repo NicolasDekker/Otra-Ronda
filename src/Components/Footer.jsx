@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer>
       <div id="contenedor" className="bg-black h-20 flex justify-between">
-        <div id="logo">
+        <div id="logo" className="pl-6 md:pl-10">
           <Link href="#home">
             <Image
               src="/img/1 otra-ronda.png"
@@ -19,16 +19,16 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div id="social_media_i" className="flex flex-row my-10 pr-3 md:pr-10 ">
+        <div id="social_media_i" className="flex flex-row pr-6 md:pr-10 my-auto">
           <div id="i_facebook">
             <Link target='_blank' rel="noopener noreferrer" href={'https://www.facebook.com/CromatikPinturerias'}>
-              <LuFacebook className="text-4xl mr-3 text-yellow-500 hover:text-c_cromatik_blue_bttn_hover" />
+              <LuFacebook className="text-4xl mr-3 text-otra_ronda_yellow hover:text-c_cromatik_blue_bttn_hover" />
             </Link>
           </div>
 
           <div id="i_instagram">
             <Link target='_blank' rel="noopener noreferrer" href={'https://www.instagram.com/otraronda.ok/'}>
-              <FaInstagram className="text-4xl mr-3 text-yellow-500 hover:text-c_cromatik_blue_bttn_hover" />
+              <FaInstagram className="text-4xl mr-3 text-otra_ronda_yellow hover:text-c_cromatik_blue_bttn_hover" />
             </Link>
           </div>
         </div>

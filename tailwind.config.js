@@ -7,17 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        '3xl': '1920px',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          "bg_otra_ronda_servicios": 'linear-gradient(0deg, rgba(1,15,4,1) 9%, rgba(0,0,0,1) 53%, rgba(4,0,60,1) 100%)',
       },
       colors: {
-        'c_cromatik': '#3A74C3',
-        'c_cromatik_btnh':'#1A4A8F',
-        'c_cromatik_gray_border': '#968787',
-        'c_cromatik_gray_bg': '#545454',
-        'text_otra' : '#eab308'
+        'otra_ronda_yellow': '#eab308',
+        'otra_ronda_grey_bg': '#545454',
+        
     },
     },
   },

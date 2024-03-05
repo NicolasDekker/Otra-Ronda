@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="container h-[100px] max-w-full ">
       <div className="flex flex-row h-[100px] justify-between ">
 
-        <div id="logo" className="flex items-center">
+        <div id="logo" className="flex items-center pl-6 md:pl-10">
           <Link href="#home">
           <Image
               src="/img/1 otra-ronda.png"
@@ -32,7 +32,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className={` ${!isOpen ? 'md:static md:h-auto hidden z-0' : 'absolute inset-y-20 bottom-[50%] md:p-0 block z-50'} bg-black text-yellow-500 md:flex w-full md:w-auto md:pb-0 md:mt-0`}
+        <div className={` ${!isOpen ? 'md:static md:h-auto hidden z-0' : 'absolute inset-y-20 bottom-[50%] md:p-0 block z-50'} bg-black text-otra_ronda_yellow md:flex w-full md:w-auto md:pb-0 md:mt-0 pr-6`}
         >
           <ul className=" w-full leading-4 text-[16px] md:text-[17px] font-montserrat md:flex md:px-4 md:items-center">
 
@@ -83,7 +83,7 @@ const Navbar = () => {
         </div>
         <div className="flex  my-auto md:hidden text-3xl pr-6">
           <button className="mx-auto" onClick={handleClick}>
-          {isOpen ? <IoClose className="text-yellow-500 mx-auto" /> : <IoMenu className="text-yellow-500  mx-auto" />}
+          {isOpen ? <IoClose className="text-otra_ronda_yellow mx-auto" /> : <IoMenu className="text-otra_ronda_yellow  mx-auto" />}
           </button>
         </div>
       </div>

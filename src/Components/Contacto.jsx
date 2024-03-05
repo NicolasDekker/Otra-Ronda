@@ -142,15 +142,15 @@ const Contacto = () => {
           
         </div>
 
-        <div className="bg-c_cromatik_gray_bg bg-opacity-50 w-full lg:w-[50%] md:w-[50%] p-2 rounded-2xl border-4 border-c_cromatik_gray_border h-auto font-lato text-black">
+        <div className="bg-otra_ronda_grey_bg bg-opacity-40 w-full lg:w-[50%] md:w-[50%] p-2 rounded-2xl border-2 border-otra_ronda_yellow h-auto font-lato text-black">
           <form ref={form} onSubmit={handleSubmit} className="flex flex-col items-center justify-center p-2">
-            <h1 className="text-yellow-500 text-[35px] md:text-[40px] uppercase font-montserrat font-bold">Contactanos</h1>
+            <h1 className="text-otra_ronda_yellow text-[35px] md:text-[40px] uppercase font-montserrat font-bold">Contactanos</h1>
 
             <div className="pt-4 w-full md:p-4">
-              <p className="text-yellow-500 text-center text-[16px] md:text-[17px]">Nombre completo *</p>
+              <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">Nombre completo *</p>
               <div className="flex w-full justify-between pt-2">
-              <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-yellow-500" type="text" id="nombre" placeholder="Nombre" name="nombre" />
-                <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-yellow-500" type="text" id="apellido" placeholder="Apellido" name="apellido" />
+              <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="nombre" placeholder="Nombre" name="nombre" />
+                <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="apellido" placeholder="Apellido" name="apellido" />
               </div>
               {validationErrors.nombreCompleto && (
                 <div className="text-red-400 font-bold text-center">
@@ -160,9 +160,9 @@ const Contacto = () => {
             </div>
 
             <div className="pt-4 w-full md:p-4">
-              <p className="text-yellow-500 text-center text-[16px] md:text-[17px]">Email *</p>
+              <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">Email *</p>
               <div className="flex w-full justify-center pt-2">
-                <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-yellow-500" type="text" id="mail" placeholder="Ingrese mail donde desea ser contactado" name="mail" />
+                <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="mail" placeholder="Ingrese mail donde desea ser contactado" name="mail" />
               </div>
               {validationErrors.mail && (
                 <div className="text-red-400 font-bold text-center">
@@ -172,9 +172,9 @@ const Contacto = () => {
             </div>
 
             <div className="pt-4 w-full md:p-4">
-              <p className="text-yellow-500 text-center text-[16px] md:text-[17px]">Teléfono</p>
+              <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">Teléfono</p>
               <div className="flex w-full justify-center pt-2">
-                <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-yellow-500" type="text" id="tel" placeholder="Ingrese número de teléfono" name="tel" />
+                <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="tel" placeholder="Ingrese número de teléfono" name="tel" />
               </div>
               {validationErrors.tel && (
                 <div className="text-red-400 font-bold text-center">
@@ -184,7 +184,7 @@ const Contacto = () => {
             </div>
 
             <div className="pt-4 w-full md:p-4">
-              <p className="text-yellow-500 text-center text-[16px] md:text-[17px]">¿Por cuál servicio nos contacta?</p>
+              <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">¿Por cuál servicio nos contacta?</p>
               <div className="flex w-full justify-center pt-2">
                 <select 
                   name="servicio" 
@@ -207,9 +207,9 @@ const Contacto = () => {
             </div>
 
             <div className="pt-4 w-full md:p-4">
-              <p className="text-yellow-500 text-center text-[16px] md:text-[17px]">Mensaje</p>
+              <p className="text-otra_ronda_yellow0 text-center text-[16px] md:text-[17px] text-otra_ronda_yellow">Mensaje</p>
               <div className="flex w-full justify-center pt-2">
-                <textarea className="w-full rounded-md p-1 text-[14px] md:text-[16px] bg-black text-yellow-500" type="text" id="mensaje" placeholder="Ingrese su consulta" name="mensaje" />
+                <textarea className="w-full rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="mensaje" placeholder="Ingrese su consulta" name="mensaje" />
               </div>
               {validationErrors.mensaje && (
                 <div className="text-red-400 font-bold text-center">
@@ -220,7 +220,7 @@ const Contacto = () => {
 
             <button
               type="submit" 
-              className="text-yellow-500 bg-black z-10 rounded-xl p-2 mt-4 m-2 w-64 md:w-96 hover:bg-yellow-500 hover:text-black font-montserrat font-bold text-[16px] md:text-[17px]"
+              className="text-otra_ronda_yellow bg-black z-10 rounded-xl p-2 mt-4 m-2 w-64 md:w-72 lg:w-96 hover:bg-otra_ronda_yellow hover:text-black font-montserrat font-bold text-[16px] md:text-[17px]"
             >
               Enviar consulta
               </button>
@@ -228,6 +228,19 @@ const Contacto = () => {
 
           {Object.keys(validationErrors).length == 0 && <ToastContainer />}
         </div>
+
+        <a
+        href="https://wa.me/5491154867763"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/img/whatsapp_logo.svg"
+          loading="lazy"
+          alt="WhatsApp Logo"
+          className="fixed bottom-32 right-4 md:right-12 z-50 w-14 md:w-16 h-auto"
+        ></img>
+      </a>
 
       </div>
     </div>
