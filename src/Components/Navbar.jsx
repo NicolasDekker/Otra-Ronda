@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useState, useEffect } from "react";
+import { BsTelephone } from "react-icons/bs";
+import { BiDrink } from "react-icons/bi";
+import { IoPeopleOutline } from "react-icons/io5";
+import { GoHome } from "react-icons/go";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // menu cerrado
@@ -29,10 +33,26 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+      if (isOpen && isScrolled) {
+        setIsOpen(false); // Cierra el menú cuando se hace scroll
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isOpen]);
+
 
 
   return (
-    <nav className={`container h-[100px] max-w-full z-10 ${scrolled ? 'bg-transparent ' : ''} ${scrolled ? 'fixed top-0' : ''}`}>
+    <nav className={`container h-[100px] max-w-full z-10 transition-all ease-in-out duration-100 ${scrolled ? 'bg-black bg-opacity-55' : ''} ${scrolled ? 'fixed top-0' : ''}`}>
       <div className="flex flex-row h-[100px] justify-between ">
 
         <div id="logo" className="flex items-center pl-6 md:pl-10">
@@ -53,19 +73,21 @@ const Navbar = () => {
 
             {/* HOME */}
             <li 
-              className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0"
+              className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
               onClick={handleMenuItemClick}
             >
+              <GoHome className="pt-0 md:mb-0 mr-1 text-2xl" />
               <Link href="#home" >
-                <p className="hover:underline decoration-[3px]">Home</p>
+                <p className="hover:underline decoration-[3px] ">Home</p>
               </Link>
             </li>
 
             {/* SERVICIOS */}
             <li 
-              className="w-full p-3 py-4 mt-2  md:text-base md:w-auto md:border-0"
+              className="w-full p-3 py-4 mt-2  md:text-base md:w-auto md:border-0 flex"
               onClick={handleMenuItemClick}
             >
+              <BiDrink className="mb-1 md:mb-0 mr-1 text-2xl" />
               <Link href="#servicios" className="" >
                 <p className="hover:underline decoration-[3px]">Servicios</p>
               </Link>
@@ -74,9 +96,10 @@ const Navbar = () => {
 
             {/* CONTACTO */}
             <li 
-              className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0"
+              className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
               onClick={handleMenuItemClick}
             >
+              <BsTelephone className="mb-1 md:mb-0 mr-1 text-2xl"/>
               <Link href="#contacto" className="" >
                 <p className="hover:underline decoration-[3px]">Contacto</p>
               </Link>
@@ -85,10 +108,11 @@ const Navbar = () => {
 
             {/* NOSOTROS */}
             <li 
-              className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0"
+              className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
               onClick={handleMenuItemClick}
             >
-              <Link href="#nosotros" className="md:hover:border-b-4">
+              <IoPeopleOutline className="mb-1 md:mb-0 mr-1 text-2xl" />
+              <Link href="#nosotros" className="">
                 <p className="hover:underline decoration-[3px]">Nosotros</p>
               </Link>
             </li>
@@ -107,14 +131,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-/* PRODUCTOS 
-<li 
-className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0"
-onClick={handleMenuItemClick}
->
-<Link href="#productos" className="" >
-  <p className="hover:underline decoration-[3px]">Productos</p>
-</Link>
-
-</li> */

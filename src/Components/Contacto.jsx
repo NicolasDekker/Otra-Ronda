@@ -135,102 +135,103 @@ const Contacto = () => {
         id="contacto"
         className="h-[100vh] bg-cover bg-center flex items-center p-5"
         style={{                            
-          backgroundImage: `url(${backgroundImage})`
+          backgroundImage: `url(${backgroundImage})`,
+          
         }}
       >
-        <div className="hidden lg:block lg:w-[60%] md:block md:w-[50%]">
+        <div className="hidden lg:block lg:w-[50%] md:block md:w-[50%] ">
           
         </div>
 
-        <div className="bg-otra_ronda_grey_bg bg-opacity-40 w-full lg:w-[50%] md:w-[50%] p-2 rounded-2xl border-2 border-otra_ronda_yellow h-auto font-lato text-black">
-          <form ref={form} onSubmit={handleSubmit} className="flex flex-col items-center justify-center p-2">
-            <h1 className="text-otra_ronda_yellow text-[35px] md:text-[40px] uppercase font-montserrat font-bold">Contactanos</h1>
+          <div className="bg-otra_ronda_grey_bg bg-opacity-40 w-full lg:w-[50%] md:w-[50%] p-2 rounded-2xl border-2 border-otra_ronda_yellow h-auto font-lato text-black">
+            <form ref={form} onSubmit={handleSubmit} className="flex flex-col items-center justify-center p-2">
+              <h1 className="text-otra_ronda_yellow text-[35px] md:text-[40px] uppercase font-montserrat font-bold">Contactanos</h1>
 
-            <div className="pt-4 w-full md:p-4">
-              <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">Nombre completo *</p>
-              <div className="flex w-full justify-between pt-2">
-              <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="nombre" placeholder="Nombre" name="nombre" />
-                <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="apellido" placeholder="Apellido" name="apellido" />
-              </div>
-              {validationErrors.nombreCompleto && (
-                <div className="text-red-400 font-bold text-center">
-                  {validationErrors.nombreCompleto}
+              <div className="pt-4 w-full md:p-4">
+                <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">Nombre completo *</p>
+                <div className="flex w-full justify-between pt-2">
+                <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="nombre" placeholder="Nombre" name="nombre" />
+                  <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="apellido" placeholder="Apellido" name="apellido" />
                 </div>
-              )}
-            </div>
-
-            <div className="pt-4 w-full md:p-4">
-              <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">Email *</p>
-              <div className="flex w-full justify-center pt-2">
-                <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="mail" placeholder="Ingrese mail donde desea ser contactado" name="mail" />
+                {validationErrors.nombreCompleto && (
+                  <div className="text-red-400 font-bold text-center">
+                    {validationErrors.nombreCompleto}
+                  </div>
+                )}
               </div>
-              {validationErrors.mail && (
-                <div className="text-red-400 font-bold text-center">
-                  {validationErrors.mail}
+
+              <div className="pt-4 w-full md:p-4">
+                <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">Email *</p>
+                <div className="flex w-full justify-center pt-2">
+                  <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="mail" placeholder="Ingrese mail donde desea ser contactado" name="mail" />
                 </div>
-              )}
-            </div>
-
-            <div className="pt-4 w-full md:p-4">
-              <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">Teléfono</p>
-              <div className="flex w-full justify-center pt-2">
-                <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="tel" placeholder="Ingrese número de teléfono" name="tel" />
+                {validationErrors.mail && (
+                  <div className="text-red-400 font-bold text-center">
+                    {validationErrors.mail}
+                  </div>
+                )}
               </div>
-              {validationErrors.tel && (
-                <div className="text-red-400 font-bold text-center">
-                  {validationErrors.tel}
+
+              <div className="pt-4 w-full md:p-4">
+                <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">Teléfono</p>
+                <div className="flex w-full justify-center pt-2">
+                  <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="tel" placeholder="Ingrese número de teléfono" name="tel" />
                 </div>
-              )}
-            </div>
-
-            <div className="pt-4 w-full md:p-4">
-              <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">¿Por cuál servicio nos contacta?</p>
-              <div className="flex w-full justify-center pt-2">
-                <select 
-                  name="servicio" 
-                  id="servicio" 
-                  defaultValue="Elige una opción" 
-                  className="rounded-md p-1 w-full text-[14px] md:text-[16px] bg-black text-white"
-                  onChange={(e) => {
-                    e.target.style.color = e.target.value === "Elige una opción" ? "white" : "yellow";
-                  }}
-                  >
-                    <option  value="Elige una opción" disabled hidden className="">Elige una opción</option>
-                  {servicios.map(servicio => (
-                    <option key={servicio.id} value={servicio.categoria}>
-                      {servicio.categoria}
-                    </option>
-                  ))}                  
-                </select>
-
+                {validationErrors.tel && (
+                  <div className="text-red-400 font-bold text-center">
+                    {validationErrors.tel}
+                  </div>
+                )}
               </div>
-            </div>
 
-            <div className="pt-4 w-full md:p-4">
-              <p className="text-otra_ronda_yellow0 text-center text-[16px] md:text-[17px] text-otra_ronda_yellow">Mensaje</p>
-              <div className="flex w-full justify-center pt-2">
-                <textarea className="w-full rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="mensaje" placeholder="Ingrese su consulta" name="mensaje" />
-              </div>
-              {validationErrors.mensaje && (
-                <div className="text-red-400 font-bold text-center">
-                  {validationErrors.mensaje}
+              <div className="pt-4 w-full md:p-4">
+                <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">¿Por cuál servicio nos contacta?</p>
+                <div className="flex w-full justify-center pt-2">
+                  <select 
+                    name="servicio" 
+                    id="servicio" 
+                    defaultValue="Elige una opción" 
+                    className="rounded-md p-1 w-full text-[14px] md:text-[16px] bg-black text-white"
+                    onChange={(e) => {
+                      e.target.style.color = e.target.value === "Elige una opción" ? "white" : "yellow";
+                    }}
+                    >
+                      <option  value="Elige una opción" disabled hidden className="">Elige una opción</option>
+                    {servicios.map(servicio => (
+                      <option key={servicio.id} value={servicio.categoria}>
+                        {servicio.categoria}
+                      </option>
+                    ))}                  
+                  </select>
+
                 </div>
-              )}
-            </div>
+              </div>
 
-            <button
-              type="submit" 
-              className="text-otra_ronda_yellow bg-black z-10 rounded-xl p-2 mt-4 m-2 w-64 md:w-72 lg:w-96 hover:bg-otra_ronda_yellow hover:text-black font-montserrat font-bold text-[16px] md:text-[17px]"
-            >
-              Enviar consulta
-              </button>
-          </form>
+              <div className="pt-4 w-full md:p-4">
+                <p className="text-otra_ronda_yellow0 text-center text-[16px] md:text-[17px] text-otra_ronda_yellow">Mensaje</p>
+                <div className="flex w-full justify-center pt-2">
+                  <textarea className="w-full rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="mensaje" placeholder="Ingrese su consulta" name="mensaje" />
+                </div>
+                {validationErrors.mensaje && (
+                  <div className="text-red-400 font-bold text-center">
+                    {validationErrors.mensaje}
+                  </div>
+                )}
+              </div>
 
-          {Object.keys(validationErrors).length == 0 && <ToastContainer />}
-        </div>
+              <button
+                type="submit" 
+                className="text-otra_ronda_yellow bg-black z-10 rounded-xl p-2 mt-4 m-2 w-64 md:w-72 lg:w-96 hover:bg-otra_ronda_yellow hover:text-black font-montserrat font-bold text-[16px] md:text-[17px]"
+              >
+                Enviar consulta
+                </button>
+            </form>
+
+            {Object.keys(validationErrors).length == 0 && <ToastContainer />}
+          </div>
 
         <a
-        href="https://wa.me/5491154867763"
+        href="https://wa.me/5491154867763?text=Hola%2C%20%C2%BFC%C3%B3mo%20est%C3%A1s%3F%20Quisiera%20consultar%20por..."
         target="_blank"
         rel="noopener noreferrer"
       >
