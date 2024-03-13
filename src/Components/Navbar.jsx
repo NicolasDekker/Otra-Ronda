@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useState, useEffect } from "react";
 import { BsTelephone } from "react-icons/bs";
@@ -52,8 +53,13 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`container h-[100px] max-w-full z-10 transition-all ease-in-out duration-100 ${scrolled ? 'bg-black bg-opacity-55' : ''} ${scrolled ? 'fixed top-0' : ''}`}>
-      <div className="flex flex-row h-[100px] justify-between ">
+    <nav className={`container h-[100px] max-w-full z-10 transition-all ease-in-out duration-1000 ${scrolled ? 'bg-black bg-opacity-55' : ''} ${scrolled ? 'fixed top-0' : ''}`}>
+      <motion.div 
+        className="flex flex-row h-[100px] justify-between "
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 2 }}
+      >
 
         <div id="logo" className="flex items-center pl-6 md:pl-10">
           <Link href="#home">
@@ -124,7 +130,7 @@ const Navbar = () => {
           {isOpen ? <IoClose className="text-otra_ronda_yellow mx-auto" /> : <IoMenu className="text-otra_ronda_yellow  mx-auto" />}
           </button>
         </div>
-      </div>
+      </motion.div>
     </nav>
 
   )
