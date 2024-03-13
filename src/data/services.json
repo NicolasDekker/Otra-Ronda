@@ -88,15 +88,14 @@
         "descripcion3": "Gin Brighton, Agua Tónica Schweppes, Romero fresco, Rodaja de lima y limon.",
         "trago4": "Campari con pomelo",
         "descripcion4": "Campari, Jugo de Pomelo, lonja de peepino fresco.",
-        "trago5": "Caipirinha",
-        "descripcion5": "Cachaça Pitu, Gajos de Lima, Azucar Blanca, Hielo Escamado, Penacho de Menta fresca.",
-        "trago6": "Caipirinha de Maracuya",
-        "descripcion6": "Cachaça Pitu, Gajos de Lima, Maracuya, Azucar Blanca, Hielo Escamado, Penacho de Menta fresca.",
+        "trago6": "Caipirinha",
+        "descripcion6": "Cachaça Pitu, Gajos de Lima, Azucar Blanca, Hielo Escamado, Penacho de Menta fresca.",
+        "trago9": "Caipirinha de Maracuya",
+        "descripcion9": "Cachaça Pitu, Gajos de Lima, Maracuya, Azucar Blanca, Hielo Escamado, Penacho de Menta fresca.",
         "bebida1": "Agua Sin Gas",
         "bebida2": "Limonada",
         "bebida3": "Naranjada"
       }
-      
     ]
   }
   
