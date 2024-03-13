@@ -1,0 +1,8 @@
+.slider-nav {
+    z-index: 10;
+}
+
+.slider-container li {
+    position: relative;
+    z-index: 1;
+}

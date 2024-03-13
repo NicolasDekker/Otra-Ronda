@@ -22,13 +22,13 @@ const Footer = () => {
         <div id="social_media_i" className="flex flex-row pr-6 md:pr-10 my-auto">
           <div id="i_facebook">
             <Link target='_blank' rel="noopener noreferrer" href={'https://www.facebook.com/CromatikPinturerias'}>
-              <LuFacebook className="text-4xl mr-3 text-otra_ronda_yellow hover: hover:text-red-600 duration-500" />
+              <LuFacebook className="text-4xl mr-3 text-otra_ronda_yellow hover: hover:text-blue-500 duration-500" />
             </Link>
           </div>
 
           <div id="i_instagram">
             <Link target='_blank' rel="noopener noreferrer" href={'https://www.instagram.com/otraronda.ok/'}>
-              <FaInstagram className="text-4xl mr-3 text-otra_ronda_yellow hover:text-blue-500 duration-500" />
+              <FaInstagram className="text-4xl mr-3 text-otra_ronda_yellow hover:text-red-600  duration-500" />
             </Link>
           </div>
         </div>
