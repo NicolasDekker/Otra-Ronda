@@ -6,7 +6,7 @@ import Link from "next/link";
 const CardService = ({ titulo1, titulo2, trago1, descripcion1, trago2, descripcion2, trago3, descripcion3, trago4, descripcion4, trago5, descripcion5, trago6, descripcion6, trago7, descripcion7, trago8, descripcion8, trago9, descripcion9, bebida1, bebida2, bebida3 }) => {
     return (
         <section className=" flex justify-center p-5" >
-            <div className=" rounded-xl hover:border-2 duration-100 hover:border-yellow-500 w-80 md:w-[370px] h-auto md:h-[870px] 3xl:h-[800px] 2md:h-[900px] pb-4 bg-white bg-opacity-10">
+            <div className=" rounded-xl hover:border-2 duration-100 hover:border-yellow-500 w-80 md:w-[370px] h-auto md:h-[870px] 3xl:h-[800px] 2md:h-[900px] pb-4 bg-white bg-opacity-5">
                 <section className="flex justify-between flex-row text-white">
                     <div className="h-[20%] w-[50%]">
                         <h2 className="pt-5 pl-5 text-7xl">{titulo1}</h2>

@@ -5,7 +5,7 @@ import data from "../data/services.json";
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contacto = () => {
-  const imageURL = "img/bg-home/image-7.jpg";
+  const imageURL = "img/bg-home/image-7-3.jpg";
   const imageURLMobile = "img/bg-home/image-11.jpg";
   const form = useRef();
   const [backgroundImage, setBackgroundImage] = useState(imageURL);
@@ -143,7 +143,7 @@ const Contacto = () => {
           
         </div>
 
-          <div className="bg-otra_ronda_grey_bg bg-opacity-40 w-full lg:w-[50%] md:w-[50%] p-2 rounded-2xl border-2 border-otra_ronda_yellow h-auto font-lato text-black">
+          <div className="bg-black bg-opacity-50 w-full lg:w-[50%] md:w-[50%] p-2 rounded-2xl border-2 border-otra_ronda_yellow h-auto font-lato text-black">
             <form ref={form} onSubmit={handleSubmit} className="flex flex-col items-center justify-center p-2">
               <h1 className="text-otra_ronda_yellow text-[35px] md:text-[40px] uppercase font-montserrat font-bold">Contactanos</h1>
 

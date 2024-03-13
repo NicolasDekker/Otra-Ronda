@@ -84,7 +84,7 @@ const Navbar = () => {
             >
               <GoHome className="pt-0 md:mb-0 mr-1 text-2xl" />
               <Link href="#home" >
-                <p className="hover:underline decoration-[3px] ">Home</p>
+                <p className="hover:underline text-xl decoration-[3px] ">Home</p>
               </Link>
             </li>
 
@@ -95,7 +95,7 @@ const Navbar = () => {
             >
               <BiDrink className="mb-1 md:mb-0 mr-1 text-2xl" />
               <Link href="#servicios" className="" >
-                <p className="hover:underline decoration-[3px]">Servicios</p>
+                <p className="hover:underline text-xl decoration-[3px]">Servicios</p>
               </Link>
 
             </li>
@@ -107,7 +107,7 @@ const Navbar = () => {
             >
               <BsTelephone className="mb-1 md:mb-0 mr-1 text-2xl"/>
               <Link href="#contacto" className="" >
-                <p className="hover:underline decoration-[3px]">Contacto</p>
+                <p className="hover:underline text-xl decoration-[3px]">Contacto</p>
               </Link>
 
             </li>
@@ -119,7 +119,7 @@ const Navbar = () => {
             >
               <IoPeopleOutline className="mb-1 md:mb-0 mr-1 text-2xl" />
               <Link href="#nosotros" className="">
-                <p className="hover:underline decoration-[3px]">Nosotros</p>
+                <p className="hover:underline text-xl decoration-[3px]">Nosotros</p>
               </Link>
             </li>
           </ul>

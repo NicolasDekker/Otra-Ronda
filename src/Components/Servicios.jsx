@@ -49,6 +49,10 @@ const Servicios = () => {
           </div>
         ))}
       </div>
+      <ul className="list-disc text-xl">
+        <li>SI YA CONTRATASTE NUESTROS SERVICIOS, EN UN PROXIMO SERVICIO TENES UN 10% OFF.</li>
+
+      </ul>
       <div className="flex flex-col md:mt-16 ">
           <div className="">
           <section className=" flex justify-center p-5" >

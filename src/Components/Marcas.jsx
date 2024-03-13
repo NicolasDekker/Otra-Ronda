@@ -10,12 +10,12 @@ const Marcas = () => {
         const interval = setInterval(() => {
             // Incrementa la posición del carrusel hacia la derecha
             setScrollX((prevScrollX) => prevScrollX + 1);
-        }, 10000); // Intervalo de tiempo en milisegundos
+        }, 10); // Intervalo de tiempo en milisegundos
 
         return () => clearInterval(interval); // Limpia el intervalo al desmontar el componente
     }, []);
     return (
-        <section className="h-64 border-4">
+        <section className="h-64">
             <motion.div
                 className="flex p-10 overflow-hidden relative justify-between"
                 style={{
