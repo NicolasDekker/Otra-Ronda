@@ -1,0 +1,40 @@
+{
+    "marcas": [
+        {
+            "nombre": "fernet",
+            "imagen":"img/logo-fernet-1.jpg"
+        },
+        {
+            "nombre": "gancia",
+            "imagen":"img/logo-gancia-1.jpg"
+        },
+        {
+            "nombre": "malibu",
+            "imagen":"img/logo-malibu-1.jpg"
+        },
+        {
+            "nombre": "vodka",
+            "imagen":"img/logo-vodka-1.jpg"
+        },
+        {
+            "nombre": "havana",
+            "imagen":"img/logo-havana-3.jpg"
+        },
+        {
+            "nombre": "gin",
+            "imagen":"img/logo-gin.jpg"
+        },
+        {
+            "nombre": "coca",
+            "imagen":"img/logo-coca-1.jpg"
+        },
+        {
+            "nombre": "sprite",
+            "imagen":"img/logo-sprite-1.jpg"
+        },
+        {
+            "nombre": "schweppes",
+            "imagen":"img/logo-schweppes-1.jpg"
+        }
+    ]
+}
