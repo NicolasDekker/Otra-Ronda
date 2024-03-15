@@ -5,8 +5,8 @@ import data from "../data/services.json";
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contacto = () => {
-  const imageURL = "img/bg-home/image-7-3.jpg";
-  const imageURLMobile = "img/bg-home/image-11.jpg";
+  const imageURL = "img/image-contacto.jpg";
+  const imageURLMobile = "img/image-contacto-mobile.jpg";
   const form = useRef();
   const [backgroundImage, setBackgroundImage] = useState(imageURL);
   // const [servicios, setServicios] = useState([]);

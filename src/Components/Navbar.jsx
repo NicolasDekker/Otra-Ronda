@@ -64,7 +64,7 @@ const Navbar = () => {
         <div id="logo" className="flex items-center pl-6 md:pl-10">
           <Link href="#home">
           <Image
-              src="/img/1 otra-ronda.png"
+              src="/img/logo-otra-ronda.png"
               className="yellow-500"
               width={150}
               height={150}

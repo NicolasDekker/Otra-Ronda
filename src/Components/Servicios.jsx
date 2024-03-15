@@ -56,7 +56,7 @@ const Servicios = () => {
       <div className="flex flex-col md:mt-16 ">
           <div className="">
           <section className=" flex justify-center p-5" >
-            <div className=" rounded-xl hover:border-2 duration-100 hover:border-yellow-500 md:w-auto w-80 h-auto  pb-4 bg-black bg-opacity-60">
+            <div className=" rounded-xl hover:border-2 duration-100 hover:border-yellow-500 md:w-auto w-80 h-auto  pb-4 bg-white bg-opacity-5">
                 <section className="flex justify-between flex-row text-white">
                     <div className="w-[50%]">
                         <h2 className="pt-5 pl-5 text-7xl"></h2>
@@ -91,7 +91,7 @@ const Servicios = () => {
                 <section className="flex pt-10">
                     <div className="flex w-[50%] justify-center">
                         <Image
-                            src="/img/1 otra-ronda.png"
+                            src="/img/logo-otra-ronda.png"
                             className="yellow-500"
                             width={150}
                             height={150}

@@ -1,175 +1,41 @@
-import React from 'react'
-import CardMarcas from "./CardMarcas";
-import data from "../data/marcas.json";
-
-const Marcas = () => {
-    const marcasData = data.marcas;
-    return (
-        <div className='absolute left-0 flex gap-4'>
-            {marcasData.map((marcas, index) => (
-                <div key={index}>
-                    <CardMarcas 
-                        imagen={marcas.imagen}
-                    />
-                </div>
-                
-            ))}
-        </div>
-    )
-}
-
-export default Marcas
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* import React, { useState, useEffect } from "react";
+import React from 'react';
 import Image from "next/image";
-import Link from "next/link";
-import { motion, useCycle } from "framer-motion";
+import Ticker from 'framer-motion-ticker';
 
-const Marcas = () => {
-    const [cycle, setCycle] = useCycle(0, 1);
-    const [scrollX, setScrollX] = useState(0);
-    const [containerWidth, setContainerWidth] = useState(0);
+const image1 = '/img/logo-fernet.png';
+const image2 = '/img/logo-gancia.png';
+const image3 = '/img/logo-malibu.png';
+const image4 = '/img/logo-vodka.png';
+const image5 = '/img/logo-havana.jpeg';
+const image6 = '/img/logo-gin.png';
+const image7 = '/img/logo-coca.webp';
+const image8 = '/img/logo-sprite.png';
+const image9 = '/img/logo-schweppes.png';
 
-    useEffect(() => {
-        const container = document.querySelector(".marcas-container");
 
-        if (container) {
-            setContainerWidth(container.offsetWidth);
-        }
-
-        const interval = setInterval(() => {
-            setScrollX((prevScrollX) => {
-                if (prevScrollX >= containerWidth) {
-                    setCycle();
-                    return 0;
-                } else {
-                    return prevScrollX + 1;
-                }
-            });
-        }, 1); // Intervalo de tiempo ajustado según tus necesidades
-
-        return () => clearInterval(interval);
-    }, [containerWidth, cycle]);
-
+function Marcas() {
+    const images = [ image1, image2, image3, image4, image5, image6, image7, image8, image9 ];
     return (
-        <section className="w-full h-64">
-            <div className="marcas-container p-10 overflow-hidden relative">
-                <motion.div
-                    className="flex flex-row justify-between"
-                    style={{
-                        x: -scrollX, // Aplica la animación de desplazamiento horizontal
-                        transition: "none", // Desactiva la transición predeterminada
-                    }}
-                >
-                    <motion.div 
-                        className="w-36 my-auto"
-                        initial={{ opacity: cycle === 0 ? 1 : 0 }}
-                        animate={{ opacity: cycle === 0 ? 1 : 0 }}
-                    >
+        <div >
+            <Ticker duration={20}>
+                {images.map((item, index) => (
+                    <div  key={index} className=" w-20 md:w-56 mx-8 my-auto py-10">
                         <Image
-                            src="/img/logo-fernet-1.png"
-                            className=""
-                            width={250}
-                            height={250}
-                            alt="Logo-Footer"
-                        />
-                    </motion.div>
-                    <div className="w-36 my-auto">
-                        <Image
-                            src="/img/logo-gancia-1.png"
-                            className=""
-                            width={300}
-                            height={300}
-                            alt="Logo-Footer"
-                        />
+                        src={item}
+                        alt={`Image ${index}`}
+                        width={250}
+                        height={250}
+                        style={{
+                            backgroundColor: item,
+                            display: 'flex',
+                            justifyContent:'space-between',
+                        }}
+                    />
                     </div>
-                    <div className="w-32 my-auto">
-                        <Image
-                            src="/img/logo-malibu-1.png"
-                            className=""
-                            width={250}
-                            height={250}
-                            alt="Logo-Footer"
-                        />
-                    </div>
-                    <div className="w-32 my-auto">
-                        <Image
-                            src="/img/logo-vodka-1.png"
-                            className=""
-                            width={250}
-                            height={250}
-                            alt="Logo-Footer"
-                        />
-                    </div>
-                    <div className="w-32 my-auto">
-                        <Image
-                            src="/img/logo-havana-3.jpeg"
-                            className=""
-                            width={250}
-                            height={250}
-                            alt="Logo-Footer"
-                        />
-                    </div>
-                    <div className="w-32 my-auto">
-                        <Image
-                            src="/img/logo-gin.png"
-                            className=""
-                            width={250}
-                            height={150}
-                            alt="Logo-Footer"
-                        />
-                    </div>
-                    <div className="w-32 my-auto">
-                        <Image
-                            src="/img/logo-coca-1.webp"
-                            className=""
-                            width={250}
-                            height={250}
-                            alt="Logo-Footer"
-                        />
-                    </div>
-                    <div className="w-32 my-auto">
-                        <Image
-                            src="/img/logo-sprite-1.png"
-                            className=""
-                            width={250}
-                            height={250}
-                            alt="Logo-Footer"
-                        />
-                    </div>
-                    <div className="w-32 my-auto">
-                        <Image
-                            src="/img/logo-schweppes-1.png"
-                            className=""
-                            width={250}
-                            height={250}
-                            alt="Logo-Footer"
-                        />
-                    </div>
-                </motion.div>
-            </div>
-        </section>
+                    
+                ))}
+            </Ticker>
+        </div>
     );
-};
-
-export default Marcas */
+}
+export default Marcas;

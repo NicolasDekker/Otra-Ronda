@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 import { motion } from "framer-motion"
 
 const Home = () => {
-  const imageURL = "img/bg-home/image-4.jpg";
-  const imageURLMobile = "/img/bg-home/image-12.jpg";
+  const imageURL = "img/image-home.jpg";
+  const imageURLMobile = "/img/image-home-mobile.jpg";
   const [backgroundImage, setBackgroundImage] = useState(imageURL);
 
   useEffect(() => {
