@@ -19,7 +19,7 @@ function Marcas() {
         <div >
             <Ticker duration={20}>
                 {images.map((item, index) => (
-                    <div  key={index} className=" w-20 md:w-56 mx-8 my-auto py-10">
+                    <div  key={index} className=" w-16 md:w-32 mx-8 my-auto py-8">
                         <Image
                         src={item}
                         alt={`Image ${index}`}

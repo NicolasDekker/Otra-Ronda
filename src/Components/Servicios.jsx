@@ -15,7 +15,7 @@ const Servicios = () => {
     id="servicios" 
     className="h-auto flex flex-col items-center p-5 w-auto pb-8 bg-bg_otra_ronda_servicios"
     >
-      <h2 className="text-center pt-8 text-6xl">Servicos</h2>
+      <h2 className="text-center pt-8 text-5xl md:text-6xl">Servicos</h2>
       <div className="flex flex-col md:mt-16 md:flex-row md:flex-wrap">
         {serviciosData.map((servicio, index) => (
           <div key={index} className="w-full md:w-1/2 xl:w-1/4">
@@ -49,7 +49,7 @@ const Servicios = () => {
           </div>
         ))}
       </div>
-      <ul className="list-disc text-xl">
+      <ul className="mx-20 list-disc text-xl">
         <li>SI YA CONTRATASTE NUESTROS SERVICIOS, EN UN PROXIMO SERVICIO TENES UN 10% OFF.</li>
 
       </ul>

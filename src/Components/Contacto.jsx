@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import data from "../data/services.json";
 import 'react-toastify/dist/ReactToastify.css';
+import './contacto.css';
 
 const Contacto = () => {
   const imageURL = "img/image-contacto.jpg";
@@ -143,15 +144,15 @@ const Contacto = () => {
           
         </div>
 
-          <div className="bg-black bg-opacity-50 w-full lg:w-[50%] md:w-[50%] p-2 rounded-2xl border-2 border-otra_ronda_yellow h-auto font-lato text-black">
+          <div className="bg-otra_ronda_grey_bg bg-opacity-40 w-full lg:w-[50%] md:w-[50%] p-2 rounded-2xl border-2 border-otra_ronda_yellow h-auto font-lato text-black">
             <form ref={form} onSubmit={handleSubmit} className="flex flex-col items-center justify-center p-2">
               <h1 className="text-otra_ronda_yellow text-[35px] md:text-[40px] uppercase font-montserrat font-bold">Contactanos</h1>
 
               <div className="pt-4 w-full md:p-4">
-                <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">Nombre completo *</p>
+                <p className="text-otra_ronda_yellow md:text-center font-bold text-[16px] md:text-[17px]">Nombre completo *</p>
                 <div className="flex w-full justify-between pt-2">
-                <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="nombre" placeholder="Nombre" name="nombre" />
-                  <input className="w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="apellido" placeholder="Apellido" name="apellido" />
+                <input className="form w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="nombre" placeholder="Nombre" name="nombre" />
+                  <input className="form w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="apellido" placeholder="Apellido" name="apellido" />
                 </div>
                 {validationErrors.nombreCompleto && (
                   <div className="text-red-400 font-bold text-center">
@@ -161,9 +162,9 @@ const Contacto = () => {
               </div>
 
               <div className="pt-4 w-full md:p-4">
-                <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">Email *</p>
+                <p className="text-otra_ronda_yellow md:text-center font-bold text-[16px] md:text-[17px]">Email *</p>
                 <div className="flex w-full justify-center pt-2">
-                  <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="mail" placeholder="Ingrese mail donde desea ser contactado" name="mail" />
+                  <input className="form w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="mail" placeholder="Ingrese mail donde desea ser contactado" name="mail" />
                 </div>
                 {validationErrors.mail && (
                   <div className="text-red-400 font-bold text-center">
@@ -173,9 +174,9 @@ const Contacto = () => {
               </div>
 
               <div className="pt-4 w-full md:p-4">
-                <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">Teléfono</p>
+                <p className="text-otra_ronda_yellow md:text-center font-bold text-[16px] md:text-[17px]">Teléfono</p>
                 <div className="flex w-full justify-center pt-2">
-                  <input className="w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="tel" placeholder="Ingrese número de teléfono" name="tel" />
+                  <input className="form w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="tel" placeholder="Ingrese número de teléfono" name="tel" />
                 </div>
                 {validationErrors.tel && (
                   <div className="text-red-400 font-bold text-center">
@@ -185,13 +186,13 @@ const Contacto = () => {
               </div>
 
               <div className="pt-4 w-full md:p-4">
-                <p className="text-otra_ronda_yellow text-center text-[16px] md:text-[17px]">¿Por cuál servicio nos contacta?</p>
+                <p className="text-otra_ronda_yellow md:text-center font-bold text-[16px] md:text-[17px]">¿Por cuál servicio nos contacta?</p>
                 <div className="flex w-full justify-center pt-2">
                   <select 
                     name="servicio" 
                     id="servicio" 
                     defaultValue="Elige una opción" 
-                    className="rounded-md p-1 w-full text-[14px] md:text-[16px] bg-black text-white"
+                    className="form rounded-md p-1 w-full text-[14px] md:text-[16px] bg-black text-white"
                     onChange={(e) => {
                       e.target.style.color = e.target.value === "Elige una opción" ? "white" : "yellow";
                     }}
@@ -208,9 +209,9 @@ const Contacto = () => {
               </div>
 
               <div className="pt-4 w-full md:p-4">
-                <p className="text-otra_ronda_yellow0 text-center text-[16px] md:text-[17px] text-otra_ronda_yellow">Mensaje</p>
+                <p className="text-otra_ronda_yellow md:text-center text-[16px] md:text-[17px]  font-bold">Mensaje</p>
                 <div className="flex w-full justify-center pt-2">
-                  <textarea className="w-full rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="mensaje" placeholder="Ingrese su consulta" name="mensaje" />
+                  <textarea className="form w-full rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" color='white' id="mensaje" placeholder="Ingrese su consulta" name="mensaje" />
                 </div>
                 {validationErrors.mensaje && (
                   <div className="text-red-400 font-bold text-center">
