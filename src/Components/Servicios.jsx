@@ -56,7 +56,7 @@ const Servicios = () => {
       <div className="flex flex-col md:mt-16 ">
           <div className="">
           <section className=" flex justify-center p-5" >
-            <div className=" rounded-xl hover:border-2 duration-100 hover:border-yellow-500 md:w-auto w-80 h-auto  pb-4 bg-white bg-opacity-5">
+            <div className=" rounded-xl hover:border-2 hover:border-yellow-500 duration-1000 md:w-auto w-80 h-auto  pb-4 bg-white bg-opacity-5">
                 <section className="flex justify-between flex-row text-white">
                     <div className="w-[50%]">
                         <h2 className="pt-5 pl-5 text-7xl"></h2>
@@ -99,7 +99,7 @@ const Servicios = () => {
                         />
                     </div>
                     <div className="w-[50%] flex justify-center">
-                        <button className="text-otra_ronda_yellow bg-black rounded-xl p-2 mt-4 m-2 w-32  hover:bg-otra_ronda_yellow hover:text-black  text-[16px] md:text-[17px] border-2 border-yellow-500">
+                        <button className="text-otra_ronda_yellow bg-black rounded-xl p-2 mt-4 m-2 w-32 duration-500 hover:bg-otra_ronda_yellow hover:text-black  text-[16px] md:text-[17px] border-2 border-yellow-500">
                             <Link 
                                 href="https://wa.me/5491154867763?text=Hola%2C%20%C2%BFC%C3%B3mo%20est%C3%A1s%3F%20Quisiera%20consultar%20por..."
                                 target="_blank"

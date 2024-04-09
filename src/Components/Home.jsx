@@ -36,9 +36,9 @@ const Home = () => {
       >
       
         <div className="flex flex-col items-center text-white">
-          <h1 className="text-yellow-200 font-porsche text-6xl mb-10 md:mt-20 text-center 3xl:text-8xl">Otra Ron'da</h1>
+          <h1 className="text-yellow-200 text-6xl mb-10 md:mt-20 text-center 3xl:text-8xl font-medula">Otra Ron'da</h1>
         </div>
-          <p className="text-yellow-200 text-center sm:px-16 md:px-32 md:text-2xl 2xl:w-3/4 3xl:w-1/2 mt-32 md:mt-8 lg:w-2/3 text-xl font-swiss">
+          <p className="text-yellow-200 text-center sm:px-16 md:px-32 md:text-2xl 2xl:w-3/4 3xl:w-1/2 mt-32 md:mt-8 lg:w-2/3 text-xl ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae sunt iusto ut quia minus animi ducimus asperiores voluptates, dolor tempore hic non aspernatur, vitae enim officia voluptas aut veritatis!
           </p> 
       </motion.div>

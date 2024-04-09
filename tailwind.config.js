@@ -22,7 +22,10 @@ module.exports = {
         'otra_ronda_grey_bg': '#545454',
         
     },
-    },
+  },
+    fontFamily: {
+      medula: ['Medula-One']
+    }
   },
   plugins: [],
 };

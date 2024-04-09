@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer>
       <div id="contenedor" className="bg-black h-20 flex justify-between">
-        <div id="logo" className="pl-6 md:pl-10">
+        <div id="logo" className="pl-6 md:pl-10 flex my-auto">
           <Link href="#home">
             <Image
               src="/img/logo-otra-ronda.png"

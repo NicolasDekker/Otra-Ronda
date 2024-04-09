@@ -17,7 +17,7 @@ function Marcas() {
     const images = [ image1, image2, image3, image4, image5, image6, image7, image8, image9 ];
     return (
         <div >
-            <Ticker duration={20}>
+            <Ticker duration={10} direction={-1}>
                 {images.map((item, index) => (
                     <div  key={index} className=" w-16 md:w-32 mx-8 my-auto py-8">
                         <Image
