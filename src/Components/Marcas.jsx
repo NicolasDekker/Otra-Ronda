@@ -16,10 +16,10 @@ const image9 = '/img/logo-schweppes.png';
 function Marcas() {
     const images = [ image1, image2, image3, image4, image5, image6, image7, image8, image9 ];
     return (
-        <div >
-            <Ticker duration={10} direction={-1}>
+        <div id="nosotros">
+            <Ticker duration={15} direction={-1}>
                 {images.map((item, index) => (
-                    <div  key={index} className=" w-16 md:w-32 mx-8 my-auto py-8">
+                    <div  key={index} className=" w-16 md:w-32 mx-5 md:mx-20 my-auto py-8">
                         <Image
                         src={item}
                         alt={`Image ${index}`}

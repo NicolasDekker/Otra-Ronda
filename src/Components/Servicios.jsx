@@ -15,7 +15,7 @@ const Servicios = () => {
     id="servicios" 
     className="h-auto flex flex-col items-center p-5 w-auto pb-8 bg-bg_otra_ronda_servicios"
     >
-      <h2 className="text-center pt-8 text-5xl md:text-6xl">Servicos</h2>
+      <h2 className="text-center mt-8 text-5xl md:text-7xl font-medula">Servicos</h2>
       <div className="flex flex-col md:mt-16 md:flex-row md:flex-wrap">
         {serviciosData.map((servicio, index) => (
           <div key={index} className="w-full md:w-1/2 xl:w-1/4">
@@ -49,24 +49,24 @@ const Servicios = () => {
           </div>
         ))}
       </div>
-      <ul className="mx-20 list-disc text-xl">
+      <ul className="mx-20 text-xenter md:text-left list-disc text-xl">
         <li>SI YA CONTRATASTE NUESTROS SERVICIOS, EN UN PROXIMO SERVICIO TENES UN 10% OFF.</li>
 
       </ul>
       <div className="flex flex-col md:mt-16 ">
           <div className="">
           <section className=" flex justify-center p-5" >
-            <div className=" rounded-xl hover:border-2 hover:border-yellow-500 duration-1000 md:w-auto w-80 h-auto  pb-4 bg-white bg-opacity-5">
+            <div className=" rounded-xl hover:border-2 hover:border-yellow-500 md:w-auto w-80 h-auto  pb-4 bg-white bg-opacity-5">
                 <section className="flex justify-between flex-row text-white">
                     <div className="w-[50%]">
                         <h2 className="pt-5 pl-5 text-7xl"></h2>
                         <h3 className="pl-7 text-3xl"></h3>
                     </div>
                 </section>
-                <h4 className="text-center text-3xl text-yellow-500 ">Adicionales</h4>
+                <h4 className="text-center text-3xl text-yellow-500 font-medula">Adicionales</h4>
                 <section className="pt-5 flex flex-col  md:flex-row text-start text-3xl text-yellow-500">
                     <div className="pb-3 px-5">
-                        <p className="text-2xl">Gaseosas</p>
+                        <p className="text-2xl font-medula">Gaseosas</p>
                         <ul className="text-white text-[15px]">
                           <li className="h-5">- Coca-Cola</li>
                           <li className="h-5">- Sprite</li>
@@ -75,14 +75,14 @@ const Servicios = () => {
                         </ul>
                     </div>
                     <div className="pb-3 px-5">
-                        <p className="text-2xl">Champagne</p>
+                        <p className="text-2xl font-medula">Champagne</p>
                         <ul className="text-white text-[15px]">
                           <li className="h-5">- Champagne espumante</li>
                           <li className="h-5"> + copas de servicio </li>
                         </ul>
                     </div>
                     <div className="pb-3 px-5">
-                        <p className="text-2xl">Cervezas</p>
+                        <p className="text-2xl font-medula">Cervezas</p>
                         <ul className="text-white text-[15px]">
                           <li className="h-5">- Consultar Variedad</li>
                         </ul>
