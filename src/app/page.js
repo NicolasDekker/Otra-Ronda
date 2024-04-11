@@ -1,23 +1,29 @@
+"use client"
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Home from '../components/Home'
-import Productos from '../components/Productos'
+import Servicios from '../components/Servicios'
 import SobreNosotros from '../components/SobreNosotros'
+import Marcas from '../components/Marcas'
+import TickerSobreNos from '../components/TickerSobreNos'
 import Contacto from '../components/Contacto'
-import Mapa from '../components/Mapa'
 import Footer from '../components/Footer'
+import { LiaCocktailSolid } from "react-icons/lia";
+import './App.css';
 
 const homePage = () => {
+
   return (
     <div>
-      <title>CROMATIK</title>
-        <Navbar />
-        <Home />
-        <Productos />
-        <Contacto />
-        <SobreNosotros />
-        <Mapa />
-        <Footer /> 
+      <title>Otra Ron'da</title>
+      <Navbar />
+      <Home />
+      <Servicios />
+      <Marcas />
+      <SobreNosotros />
+      <TickerSobreNos />
+      <Contacto />
+      <Footer /> 
     </div>
   );
 }
