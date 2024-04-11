@@ -24,12 +24,12 @@ const image19 = '/img/catalogo-tragos-19.jpg';
 const image20 = '/img/catalogo-tragos-20.jpg';
 
 function TickerSobreNos() {
-    const images = [ image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20];
+    const images = [ image1, image2, image6, image7, image8, image12, image14, image15, image16, image17,  image19];
     return (
         <div >
-            <Ticker duration={25} direction={1} >
+            <Ticker duration={15} direction={1} >
                 {images.map((item, index) => (
-                    <div key={index} className="w-20 md:w-40 mx-8 my-auto py-8">
+                    <div key={index} className="w-20 md:w-40 mx-5 md:mx-20 my-auto py-8">
                         <Image
                             src={item}
                             alt={`Image ${index}`}

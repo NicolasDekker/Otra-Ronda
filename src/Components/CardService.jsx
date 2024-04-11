@@ -6,9 +6,9 @@ import Link from "next/link";
 const CardService = ({ titulo1, titulo2, trago1, descripcion1, trago2, descripcion2, trago3, descripcion3, trago4, descripcion4, trago5, descripcion5, trago6, descripcion6, trago7, descripcion7, trago8, descripcion8, trago9, descripcion9, bebida1, bebida2, bebida3 }) => {
     return (
         <section className=" flex justify-center p-5" >
-            <div className=" rounded-xl hover:border-2 duration-300 hover:border-yellow-500 w-80 md:w-[370px] h-auto md:h-[870px] 3xl:h-[800px] 2md:h-[900px] pb-4 bg-white bg-opacity-5">
+            <div className=" rounded-xl hover:border-2 hover:border-yellow-500 w-80 md:w-[370px] h-auto md:h-[870px] 3xl:h-[800px] 2md:h-[900px] pb-4 bg-white bg-opacity-5">
                 <section className="flex justify-between flex-row text-white">
-                    <div className="h-[20%] w-[50%]">
+                    <div className="h-[20%] w-[50%] font-medula">
                         <h2 className="pt-5 pl-5 text-7xl">{titulo1}</h2>
                         <h3 className="pl-7 text-3xl">{titulo2}</h3>
                     </div>
@@ -16,7 +16,7 @@ const CardService = ({ titulo1, titulo2, trago1, descripcion1, trago2, descripci
                     
                 </section>
                 <section className="md:h-[52%] 2md:h-[50%] lg:h-[60%] 2xl:h-[53%] 3xl:h-[53%]">
-                    <h4 className="text-center text-3xl pt-5 text-yellow-500">Cócteles</h4>
+                    <h4 className="text-center text-3xl pt-5 text-yellow-500 font-medula">Cócteles</h4>
                 <div className="pt-5 flex">
                     <ul className="pl-4 w-[50%] text-yellow-500">
                         <li className="text-[14px]">{trago1}</li>
@@ -43,7 +43,7 @@ const CardService = ({ titulo1, titulo2, trago1, descripcion1, trago2, descripci
                 </div>
                 </section>
                 <section className="h-[25%]">
-                    <h4 className="text-center text-3xl text-yellow-500">Sin Alcohol</h4>
+                    <h4 className="text-center text-3xl text-yellow-500 font-medula">Sin Alcohol</h4>
                 <ul className="text-white text-center text-[14px]">
                     <li className="">{bebida1}</li>
                     <li className="">{bebida2}</li>

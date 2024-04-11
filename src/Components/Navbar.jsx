@@ -53,7 +53,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`container h-[100px] max-w-full z-10 transition-all ease-in-out duration-1000 ${scrolled ? 'bg-black bg-opacity-55' : ''} ${scrolled ? 'fixed top-0' : ''}`}>
+    <nav className={`container h-[100px] max-w-full z-10 transition-all ease-in-out duration-1000 ${scrolled ? ' bg-opacity-55' : ''} ${scrolled ? 'fixed top-0' : ''}`}>
       <motion.div 
         className="flex flex-row h-[100px] justify-between "
         initial={{ opacity: 0, scale: 0.5 }}
@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
         <div className={` ${!isOpen ? 'md:static md:h-auto hidden z-0' : 'absolute inset-y-20 bottom-[50%] md:p-0 block z-50'} ${scrolled ? 'bg-transparent' : 'bg-black'} text-otra_ronda_yellow md:flex w-full md:w-auto md:pb-0 md:mt-0 pr-6`}
         >
-          <ul className=" w-full leading-4 text-[16px] md:text-[17px] font-montserrat md:flex md:px-4 md:items-center">
+          <ul className=" w-full leading-4 text-[16px] md:text-[17px] font-medula md:flex md:px-4 md:items-center">
 
 
             {/* HOME */}
@@ -84,7 +84,7 @@ const Navbar = () => {
             >
               <GoHome className="pt-0 md:mb-0 mr-1 text-2xl" />
               <Link href="#home" >
-                <p className="hover:underline text-xl decoration-[3px] ">Home</p>
+                <p className="hover:underline text-[22px] decoration-[3px] ">Home</p>
               </Link>
             </li>
 
@@ -95,23 +95,11 @@ const Navbar = () => {
             >
               <BiDrink className="mb-1 md:mb-0 mr-1 text-2xl" />
               <Link href="#servicios" className="" >
-                <p className="hover:underline text-xl decoration-[3px]">Servicios</p>
+                <p className="hover:underline text-[22px] decoration-[3px]">Servicios</p>
               </Link>
 
             </li>
-
-            {/* CONTACTO */}
-            <li 
-              className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
-              onClick={handleMenuItemClick}
-            >
-              <BsTelephone className="mb-1 md:mb-0 mr-1 text-2xl"/>
-              <Link href="#contacto" className="" >
-                <p className="hover:underline text-xl decoration-[3px]">Contacto</p>
-              </Link>
-
-            </li>
-
+            
             {/* NOSOTROS */}
             <li 
               className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
@@ -119,9 +107,23 @@ const Navbar = () => {
             >
               <IoPeopleOutline className="mb-1 md:mb-0 mr-1 text-2xl" />
               <Link href="#nosotros" className="">
-                <p className="hover:underline text-xl decoration-[3px]">Nosotros</p>
+                <p className="hover:underline text-[22px] decoration-[3px]">Nosotros</p>
               </Link>
             </li>
+            
+            {/* CONTACTO */}
+            <li 
+              className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
+              onClick={handleMenuItemClick}
+            >
+              <BsTelephone className="mb-1 md:mb-0 mr-1 text-2xl"/>
+              <Link href="#contacto" className="" >
+                <p className="hover:underline text-[22px] decoration-[3px]">Contacto</p>
+              </Link>
+
+            </li>
+
+            
           </ul>
           
         </div>
