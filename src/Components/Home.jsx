@@ -11,8 +11,13 @@ const Home = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setBackgroundImage(window.innerWidth <= 767 ? imageURLMobile : imageURLTablet);
-      setBackgroundImage(window.innerWidth <= 1023 ? imageURLTablet : imageURL);
+      if (window.innerWidth <= 767) {
+        setBackgroundImage(imageURLMobile);
+      } else if (window.innerWidth <= 1023) {
+        setBackgroundImage(imageURLTablet);
+      } else {
+        setBackgroundImage(imageURL);
+      }
     };
     
     window.addEventListener('resize', handleResize);    
@@ -20,7 +25,7 @@ const Home = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [imageURL, imageURLMobile]);
+  }, [imageURL, imageURLMobile, imageURLTablet]);
 
   return (
     <div
@@ -38,9 +43,9 @@ const Home = () => {
       >
       
         <div className="flex flex-col items-center text-white ">
-          <h1 className="flex text-yellow-500 text-6xl xl:text-8xl text-center font-medula">Otra Ron'da</h1>
+          <h1 className="rounded-xl bg-black bg-opacity-50 lg:bg-opacity-0 flex text-yellow-500 text-6xl xl:text-8xl text-center font-medula">Otra Ron'da</h1>
         </div>
-          <p className="text-yellow-500 text-center sm:px-16 md:px-32 lg:px-20 md:text-2xl mt-16 lg:w-[90%] 2xl:w-[80%] 3xl:w-[70%] text-xl py-4">
+          <p className="rounded-xl bg-black bg-opacity-50 lg:bg-opacity-0 text-yellow-500 text-justify sm:px-16 md:px-32 lg:px-20 md:text-2xl mt-16 lg:w-[90%] 2xl:w-[80%] 3xl:w-[70%] text-xl py-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae sunt iusto ut quia minus animi ducimus asperiores voluptates, dolor tempore hic non aspernatur, vitae enim officia voluptas aut veritatis!
           </p> 
       </motion.div>
