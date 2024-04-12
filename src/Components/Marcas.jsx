@@ -3,7 +3,7 @@ import Image from "next/image";
 import Ticker from 'framer-motion-ticker';
 
 const image1 = '/img/logo-fernet.png';
-const image2 = '/img/logo-gancia.png';
+const image2 = '/img/logo-Gancia.png';
 const image3 = '/img/logo-malibu.png';
 const image4 = '/img/logo-vodka.png';
 const image5 = '/img/logo-havana.jpeg';
