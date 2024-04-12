@@ -1,15 +1,7 @@
 "use client";
 import React from "react";
 import { useEffect, useState } from 'react';
-import Image from "next/image";
-import Ticker from 'framer-motion-ticker';
-/* import { LuBeer } from "react-icons/lu";
-import { PiChampagne } from "react-icons/pi";
-import { LiaCocktailSolid } from "react-icons/lia";
-import { GiWineBottle } from "react-icons/gi";
-import { LiaGlassCheersSolid } from "react-icons/lia";
-import { LiaWineGlassAltSolid } from "react-icons/lia";
-import { LiaGlassWhiskeySolid } from "react-icons/lia"; */
+
 
 
 const SobreNosotros = () => {
