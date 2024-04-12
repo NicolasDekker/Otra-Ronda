@@ -82,9 +82,9 @@ const Navbar = () => {
               className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
               onClick={handleMenuItemClick}
             >
-              <GoHome className="pt-0 md:mb-0 mr-1 text-2xl" />
+              <GoHome className="pt-0 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl" />
               <Link href="#home" >
-                <p className="hover:underline text-[22px] decoration-[3px] ">Home</p>
+                <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] ">Home</p>
               </Link>
             </li>
 
@@ -93,9 +93,9 @@ const Navbar = () => {
               className="w-full p-3 py-4 mt-2  md:text-base md:w-auto md:border-0 flex"
               onClick={handleMenuItemClick}
             >
-              <BiDrink className="mb-1 md:mb-0 mr-1 text-2xl" />
+              <BiDrink className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl" />
               <Link href="#servicios" className="" >
-                <p className="hover:underline text-[22px] decoration-[3px]">Servicios</p>
+                <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px]">Servicios</p>
               </Link>
 
             </li>
@@ -105,9 +105,9 @@ const Navbar = () => {
               className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
               onClick={handleMenuItemClick}
             >
-              <IoPeopleOutline className="mb-1 md:mb-0 mr-1 text-2xl" />
+              <IoPeopleOutline className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl" />
               <Link href="#nosotros" className="">
-                <p className="hover:underline text-[22px] decoration-[3px]">Nosotros</p>
+                <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px]">Nosotros</p>
               </Link>
             </li>
             
@@ -116,9 +116,9 @@ const Navbar = () => {
               className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
               onClick={handleMenuItemClick}
             >
-              <BsTelephone className="mb-1 md:mb-0 mr-1 text-2xl"/>
+              <BsTelephone className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl"/>
               <Link href="#contacto" className="" >
-                <p className="hover:underline text-[22px] decoration-[3px]">Contacto</p>
+                <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px]">Contacto</p>
               </Link>
 
             </li>
