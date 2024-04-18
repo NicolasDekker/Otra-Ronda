@@ -26,7 +26,7 @@ const image20 = '/img/catalogo-tragos-20.jpg';
 function TickerSobreNos() {
     const images = [ image1, image2, image6, image7, image8, image12, image14, image15, image16, image17,  image19];
     return (
-        <div >
+        <div className='bg-yellow-100'>
             <Ticker duration={15} direction={1} >
                 {images.map((item, index) => (
                     <div key={index} className="w-20 md:w-40 mx-5 md:mx-20 my-auto py-8">
