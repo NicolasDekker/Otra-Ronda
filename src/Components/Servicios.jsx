@@ -49,7 +49,7 @@ const Servicios = () => {
           </div>
         ))}
       </div>
-      <ul className="mx-20 text-xenter md:text-left list-disc text-xl">
+      <ul className="mx-20 text-center md:text-left list-disc text-lg  md:text-xl text-white">
         <li>SI YA CONTRATASTE NUESTROS SERVICIOS, EN UN PROXIMO SERVICIO TENES UN 10% OFF.</li>
 
       </ul>

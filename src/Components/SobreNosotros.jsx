@@ -35,7 +35,8 @@ const SobreNosotros = () => {
             Sobre Nosotros
           </p>
           <div className="p-3 flex ">
-            <div className=" lg:mx-10 xl:mx-16 2xl:mx-32 3xl:mx-48 text-justify text-[14px] sm:text-[16px] xl:text-[18px] rounded-xl bg-white bg-opacity-10 p-4 lg:p-7">
+            <div className="bg-black">
+              <div className=" lg:mx-10 xl:mx-16 2xl:mx-32 3xl:mx-48 text-justify text-[14px] sm:text-[16px] xl:text-[18px] rounded-xl bg-white bg-opacity-10 p-4 lg:p-7 text-white">
 
               <p>En un pequeño rincón de Ramos mejia, nació Otra Ronda, una barra de tragos para eventos que llegó para revolucionar el mundo de la coctelería. Nuestro viaje comenzó hace poco, pero desde el primer momento supimos que estábamos destinados a algo grande.</p>
 
@@ -43,8 +44,10 @@ const SobreNosotros = () => {
 
               <p className="hidden sm:flex">En Otra Ronda, la emoción se mezcla con la creatividad en cada vaso que servimos. Cada detalle está cuidadosamente pensado para brindar una experiencia sensorial única. Nos enorgullecemos de nuestra atención al cliente y de la calidad de nuestros tragos.</p>
 
-              <p className="hidden lg:flex">Únete a nosotros en este emocionante viaje a través de los sabores y las emociones. En Otra Ronda, cada noche es una celebración, cada cóctel es una historia por descubrir. ¡Bienvenidos a Otra Ronda, donde la magia de la coctelería cobra vida!</p>
+              <p className="hidden 2xl:flex">Únete a nosotros en este emocionante viaje a través de los sabores y las emociones. En Otra Ronda, cada noche es una celebración, cada cóctel es una historia por descubrir. ¡Bienvenidos a Otra Ronda, donde la magia de la coctelería cobra vida!</p>
             </div>
+            </div>
+            
           </div>
         </div>
       </div>
