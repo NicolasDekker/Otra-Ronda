@@ -5,8 +5,8 @@ import { useEffect, useState } from 'react';
 
 
 const SobreNosotros = () => {
-  const imageURL = "img/fondo-sobre-Nosotros.png";
-  const imageURLMobile = "/img/fondo-sobre-Nosotros-mobile.png";
+  const imageURL = "img/fondo-sobre-Nosotros.webp";
+  const imageURLMobile = "/img/fondo-sobre-Nosotros-mobile.webp";
   const [backgroundImage, setBackgroundImage] = useState(imageURL);
 
   useEffect(() => {

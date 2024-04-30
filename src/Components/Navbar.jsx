@@ -64,7 +64,7 @@ const Navbar = () => {
         <div id="logo" className="flex items-center pl-6 md:pl-10">
           <Link href="#home">
           <Image
-              src="/img/logo-otra-ronda.png"
+              src="/img/logo-otra-ronda.webp"
               className="yellow-500"
               width={150}
               height={150}
@@ -116,7 +116,7 @@ const Navbar = () => {
               className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
               onClick={handleMenuItemClick}
             >
-              <BsTelephone className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl"/>
+              <BsTelephone className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px]"/>
               <Link href="#contacto" className="" >
                 <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">Contacto</p>
               </Link>
