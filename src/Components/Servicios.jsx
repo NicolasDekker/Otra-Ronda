@@ -15,7 +15,7 @@ const Servicios = () => {
     id="servicios" 
     className="h-auto flex flex-col items-center p-5 w-auto pb-8 bg-bg_otra_ronda_servicios"
     >
-      <h2 className="text-center mt-8 text-5xl md:text-7xl font-medula">Servicos</h2>
+      <h2 className="text-center mt-8 text-5xl md:text-7xl font-medula">Servicios</h2>
       <div className="flex flex-col md:mt-16 md:flex-row md:flex-wrap">
         {serviciosData.map((servicio, index) => (
           <div key={index} className="w-full md:w-1/2 xl:w-1/4">
