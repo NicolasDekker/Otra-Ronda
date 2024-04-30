@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react';
 import { motion } from "framer-motion"
 
 const Home = () => {
-  const imageURL = "img/image-home-2.png";
-  const imageURLTablet = "img/image-home.jpg";
-  const imageURLMobile = "/img/image-home-mobile.jpg";
+  const imageURL = "img/image-home-2.webp";
+  const imageURLTablet = "img/image-home.webp";
+  const imageURLMobile = "/img/image-home-mobile.webp";
   const [backgroundImage, setBackgroundImage] = useState(imageURL);
 
   useEffect(() => {
@@ -46,7 +46,7 @@ const Home = () => {
           <h1 className="rounded-xl bg-black bg-opacity-50 lg:bg-opacity-0 flex text-yellow-500 text-6xl xl:text-8xl text-center font-medula">Otra Ron'da</h1>
         </div>
           <p className="rounded-xl bg-black bg-opacity-50 lg:bg-opacity-0 text-yellow-500 text-justify sm:px-16 md:px-32 lg:px-20 md:text-2xl mt-16 lg:w-[90%] 2xl:w-[80%] 3xl:w-[70%] text-xl py-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae sunt iusto ut quia minus animi ducimus asperiores voluptates, dolor tempore hic non aspernatur, vitae enim officia voluptas aut veritatis!
+          En la coctelería, como en la vida, la magia está en la mezcla perfecta. Descubre el arte de los sabores con nuestra barra de tragos!
           </p> 
       </motion.div>
     </div>

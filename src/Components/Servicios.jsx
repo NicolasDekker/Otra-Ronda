@@ -91,7 +91,7 @@ const Servicios = () => {
                 <section className="flex pt-10">
                     <div className="flex w-[50%] justify-center">
                         <Image
-                            src="/img/logo-otra-ronda.png"
+                            src="/img/logo-otra-ronda.webp"
                             className="yellow-500"
                             width={150}
                             height={150}
