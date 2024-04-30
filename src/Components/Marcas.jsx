@@ -2,15 +2,15 @@ import React from 'react';
 import Image from "next/image";
 import Ticker from 'framer-motion-ticker';
 
-const image1 = '/img/logo-fernet.png';
-const image2 = '/img/logo-Gancia.png';
-const image3 = '/img/logo-malibu.png';
-const image4 = '/img/logo-vodka.png';
-const image5 = '/img/logo-havana.jpeg';
-const image6 = '/img/logo-gin.png';
+const image1 = '/img/logo-fernet.webp';
+const image2 = '/img/logo-Gancia.webp';
+const image3 = '/img/logo-malibu.webp';
+const image4 = '/img/logo-vodka.webp';
+const image5 = '/img/logo-havana.webp';
+const image6 = '/img/logo-gin.webp';
 const image7 = '/img/logo-coca.webp';
-const image8 = '/img/logo-sprite.png';
-const image9 = '/img/logo-schweppes.png';
+const image8 = '/img/logo-sprite.webp';
+const image9 = '/img/logo-schweppes.webp';
 
 
 function Marcas() {

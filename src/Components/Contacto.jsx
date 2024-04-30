@@ -6,8 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import './contacto.css';
 
 const Contacto = () => {
-  const imageURL = "img/image-contacto.jpg";
-  const imageURLMobile = "img/image-contacto-mobile.jpg";
+  const imageURL = "img/image-contacto.webp";
+  const imageURLMobile = "img/image-contacto-mobile.webp";
   const form = useRef();
   const [backgroundImage, setBackgroundImage] = useState(imageURL);
   // const [servicios, setServicios] = useState([]);
@@ -78,7 +78,7 @@ const Contacto = () => {
 
     // enviar mail
     try {
-      const response = fetch("https://formsubmit.co/ajax/dekkernicolas@gmail.com", {
+      const response = fetch("https://formsubmit.co/ajax/Tomyt@live.com.ar", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -237,7 +237,7 @@ const Contacto = () => {
         rel="noopener noreferrer"
       >
         <img
-          src="/img/whatsapp_logo.svg"
+          src="/img/whatsapp_logo.webp"
           loading="lazy"
           alt="WhatsApp Logo"
           className="fixed bottom-32 right-4 md:right-12 z-50 w-14 md:w-16 h-auto"

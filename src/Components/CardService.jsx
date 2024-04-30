@@ -52,7 +52,7 @@ const CardService = ({ titulo1, titulo2, trago1, descripcion1, trago2, descripci
                 <section className="flex pt-10 ">
                     <div className="flex w-[50%] justify-center">
                         <Image
-                            src="/img/logo-otra-ronda.png"
+                            src="/img/logo-otra-ronda.webp"
                             className="yellow-500"
                             width={150}
                             height={150}
