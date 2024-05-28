@@ -53,7 +53,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="container h-[100px] max-w-full z-10">
+    <nav className="container h-[100px] max-w-full z-10 bg-black">
       <motion.div 
         className="flex flex-row h-[100px] justify-between "
         initial={{ opacity: 0, scale: 0.5 }}
