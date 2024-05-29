@@ -76,18 +76,6 @@ const Navbar = () => {
         >
           <ul className=" w-full leading-4 text-[16px] md:text-[17px] font-medula md:flex md:px-4 md:items-center">
 
-
-            {/* HOME */}
-            <li 
-              className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
-              onClick={handleMenuItemClick}
-            >
-              <GoHome className="pt-0 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl" />
-              <Link href="#home" >
-                <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0 ">Home</p>
-              </Link>
-            </li>
-
             {/* SERVICIOS */}
             <li 
               className="w-full p-3 py-4 mt-2  md:text-base md:w-auto md:border-0 flex"

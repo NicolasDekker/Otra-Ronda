@@ -50,7 +50,7 @@ const Servicios = () => {
         ))}
       </div>
       <ul className="mx-20 text-center md:text-left list-disc text-lg  md:text-xl text-white">
-        <li>SI YA CONTRATASTE NUESTROS SERVICIOS, EN UN PROXIMO SERVICIO TENES UN 10% OFF.</li>
+        <li>SI YA CONTRATASTE NUESTROS SERVICIOS, EN UN PROXIMO EVENTO TENES UN 10% OFF.</li>
 
       </ul>
       <div className="flex flex-col md:mt-16 ">
@@ -63,7 +63,7 @@ const Servicios = () => {
                         <h3 className="pl-7 text-3xl"></h3>
                     </div>
                 </section>
-                <h4 className="text-center text-3xl text-yellow-500 font-medula">Adicionales</h4>
+                <h4 className="text-center text-3xl text-yellow-500 font-medula">Suma un EXTRA de Distinción</h4>
                 <section className="pt-5 flex flex-col  md:flex-row text-start text-3xl text-yellow-500">
                     <div className="pb-3 px-5">
                         <p className="text-2xl font-medula">Gaseosas</p>
