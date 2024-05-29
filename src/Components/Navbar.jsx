@@ -62,7 +62,7 @@ const Navbar = () => {
       >
 
         <div id="logo" className="flex items-center pl-6 md:pl-10">
-          <Link href="#home">
+          <Link href="home">
           <Image
               src="/img/logo-otra-ronda.webp"
               className="yellow-500"
@@ -127,3 +127,15 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+{/* 
+            <li 
+              className="w-full p-3 py-4 mt-2  md:text-base md:w-auto md:border-0 flex"
+              onClick={handleMenuItemClick}
+            >
+              <BiDrink className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl" />
+              <Link href="@/Components/RuteoBlog" className="" >
+                <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">blog</p>
+              </Link>
+              </li>
+ */}
