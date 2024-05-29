@@ -149,10 +149,9 @@ const Contacto = () => {
               <h1 className="text-otra_ronda_yellow text-[35px] md:text-[40px] uppercase font-medula font-bold">Contactanos</h1>
 
               <div className="pt-4 w-full md:p-4">
-                <p className="text-otra_ronda_yellow md:text-center font-bold text-[16px] md:text-[17px] font-medula">Nombre completo *</p>
+                <p className="text-otra_ronda_yellow md:text-center font-bold text-[16px] md:text-[17px] font-medula">Nombre</p>
                 <div className="flex w-full justify-between pt-2">
-                <input className="form w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="nombre" placeholder="Nombre" name="nombre" />
-                  <input className="form w-2/5 md:w-[40%] rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="apellido" placeholder="Apellido" name="apellido" />
+                <input className="form w-full rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="nombre" placeholder="Ingrese su nombre" name="nombre" />
                 </div>
                 {validationErrors.nombreCompleto && (
                   <div className="text-red-400 font-bold text-center">
@@ -162,7 +161,7 @@ const Contacto = () => {
               </div>
 
               <div className="pt-4 w-full md:p-4">
-                <p className="text-otra_ronda_yellow md:text-center font-bold text-[16px] md:text-[17px] font-medula">Email *</p>
+                <p className="text-otra_ronda_yellow md:text-center font-bold text-[16px] md:text-[17px] font-medula">Email</p>
                 <div className="flex w-full justify-center pt-2">
                   <input className="form w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="mail" placeholder="Ingrese mail donde desea ser contactado" name="mail" />
                 </div>
@@ -174,7 +173,7 @@ const Contacto = () => {
               </div>
 
               <div className="pt-4 w-full md:p-4">
-                <p className="text-otra_ronda_yellow md:text-center font-bold text-[16px] md:text-[17px] font-medula">Teléfono</p>
+                <p className="text-otra_ronda_yellow md:text-center font-bold text-[16px] md:text-[17px] font-medula">Celular</p>
                 <div className="flex w-full justify-center pt-2">
                   <input className="form w-full  rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" id="tel" placeholder="Ingrese número de teléfono" name="tel" />
                 </div>
@@ -186,30 +185,7 @@ const Contacto = () => {
               </div>
 
               <div className="pt-4 w-full md:p-4">
-                <p className="text-otra_ronda_yellow md:text-center font-bold text-[16px] md:text-[17px] font-medula">¿Por cuál servicio nos contacta?</p>
-                <div className="flex w-full justify-center pt-2">
-                  <select 
-                    name="servicio" 
-                    id="servicio" 
-                    defaultValue="Elige una opción" 
-                    className="form rounded-md p-1 w-full text-[14px] md:text-[16px] bg-black text-white"
-                    onChange={(e) => {
-                      e.target.style.color = e.target.value === "Elige una opción" ? "white" : "yellow";
-                    }}
-                    >
-                      <option  value="Elige una opción" disabled hidden className="">Elige una opción</option>
-                    {servicios.map(servicio => (
-                      <option key={servicio.id} value={servicio.categoria}>
-                        {servicio.categoria}
-                      </option>
-                    ))}                  
-                  </select>
-
-                </div>
-              </div>
-
-              <div className="pt-4 w-full md:p-4">
-                <p className="text-otra_ronda_yellow md:text-center text-[16px] md:text-[17px]  font-bold font-medula">Mensaje</p>
+                <p className="text-otra_ronda_yellow md:text-center text-[16px] md:text-[17px]  font-bold font-medula">Contanos sobre tu EVENTO!</p>
                 <div className="flex w-full justify-center pt-2">
                   <textarea className="form w-full rounded-md p-1 text-[14px] md:text-[16px] bg-black text-otra_ronda_yellow" type="text" color='white' id="mensaje" placeholder="Ingrese su consulta" name="mensaje" />
                 </div>

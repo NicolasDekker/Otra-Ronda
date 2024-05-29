@@ -62,7 +62,7 @@ const Navbar = () => {
       >
 
         <div id="logo" className="flex items-center pl-6 md:pl-10">
-          <Link href="#home">
+          <Link href="home">
           <Image
               src="/img/logo-otra-ronda.webp"
               className="yellow-500"
@@ -75,18 +75,6 @@ const Navbar = () => {
         <div className={` ${!isOpen ? 'md:static md:h-auto hidden z-0' : 'absolute inset-y-20 bottom-[45%] md:p-0 block z-50'} ${scrolled ? 'bg-transparent' : 'bg-black'} text-otra_ronda_yellow md:flex w-full md:w-auto md:pb-0 md:mt-0 pr-6`}
         >
           <ul className=" w-full leading-4 text-[16px] md:text-[17px] font-medula md:flex md:px-4 md:items-center">
-
-
-            {/* HOME */}
-            <li 
-              className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
-              onClick={handleMenuItemClick}
-            >
-              <GoHome className="pt-0 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl" />
-              <Link href="#home" >
-                <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0 ">Home</p>
-              </Link>
-            </li>
 
             {/* SERVICIOS */}
             <li 
@@ -139,3 +127,15 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+{/* 
+            <li 
+              className="w-full p-3 py-4 mt-2  md:text-base md:w-auto md:border-0 flex"
+              onClick={handleMenuItemClick}
+            >
+              <BiDrink className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl" />
+              <Link href="@/Components/RuteoBlog" className="" >
+                <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">blog</p>
+              </Link>
+              </li>
+ */}
