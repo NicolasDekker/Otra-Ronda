@@ -7,7 +7,6 @@ import { useState, useEffect } from "react";
 import { BsTelephone } from "react-icons/bs";
 import { BiDrink } from "react-icons/bi";
 import { IoPeopleOutline } from "react-icons/io5";
-import { GoHome } from "react-icons/go";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // menu cerrado
@@ -53,75 +52,77 @@ const Navbar = () => {
 
 
   return (
-    <nav className="container h-[100px] max-w-full z-10 bg-black">
-      <motion.div 
-        className="flex flex-row h-[100px] justify-between "
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 2 }}
-      >
-
-        <div id="logo" className="flex items-center pl-6 md:pl-10">
-          <Link href="home">
-          <Image
-              src="/img/logo-otra-ronda.webp"
-              className="yellow-500"
-              width={150}
-              height={150}
-              alt="Logo-Footer"
-            />
-          </Link>
-        </div>
-        <div className={` ${!isOpen ? 'md:static md:h-auto hidden z-0' : 'absolute inset-y-20 bottom-[45%] md:p-0 block z-50'} ${scrolled ? 'bg-transparent' : 'bg-black'} text-otra_ronda_yellow md:flex w-full md:w-auto md:pb-0 md:mt-0 pr-6`}
+    <div className="border-b-[3px] border-yellow-500">
+      <nav className="container h-[100px] max-w-full z-10 bg-black ">
+        <motion.div
+          className="flex flex-row h-[100px] justify-between "
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2 }}
         >
-          <ul className=" w-full leading-4 text-[16px] md:text-[17px] font-medula md:flex md:px-4 md:items-center">
 
-            {/* SERVICIOS */}
-            <li 
-              className="w-full p-3 py-4 mt-2  md:text-base md:w-auto md:border-0 flex"
-              onClick={handleMenuItemClick}
-            >
-              <BiDrink className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl" />
-              <Link href="#servicios" className="" >
-                <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">Servicios</p>
-              </Link>
+          <div id="logo" className="flex items-center pl-6 md:pl-10">
+            <Link href="/">
+              <Image
+                src="/img/logo-otra-ronda.webp"
+                className="yellow-500"
+                width={150}
+                height={150}
+                alt="Logo-Footer"
+              />
+            </Link>
+          </div>
+          <div className={` ${!isOpen ? 'md:static md:h-auto hidden z-0' : 'absolute inset-y-20 bottom-[45%] md:p-0 block z-50'} ${scrolled ? 'bg-transparent' : 'bg-black'} text-otra_ronda_yellow md:flex w-full md:w-auto md:pb-0 md:mt-0 pr-6`}
+          >
+            <ul className=" w-full leading-4 text-[16px] md:text-[17px] font-medula md:flex md:px-4 md:items-center ">
 
-            </li>
-            
-            {/* NOSOTROS */}
-            <li 
-              className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
-              onClick={handleMenuItemClick}
-            >
-              <IoPeopleOutline className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl" />
-              <Link href="#nosotros" className="">
-                <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">Nosotros</p>
-              </Link>
-            </li>
-            
-            {/* CONTACTO */}
-            <li 
-              className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
-              onClick={handleMenuItemClick}
-            >
-              <BsTelephone className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px]"/>
-              <Link href="#contacto" className="" >
-                <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">Contacto</p>
-              </Link>
+              {/* SERVICIOS */}
+              <li
+                className="w-full p-3 py-4 mt-2  md:text-base md:w-auto md:border-0 flex"
+                onClick={handleMenuItemClick}
+              >
+                <BiDrink className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl" />
+                <Link href="/servicios" className="" >
+                  <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">Servicios</p>
+                </Link>
 
-            </li>
+              </li>
 
-            
-          </ul>
-          
-        </div>
-        <div className="flex  my-auto md:hidden text-3xl pr-6">
-          <button className="mx-auto" onClick={handleClick}>
-          {isOpen ? <IoClose className="text-otra_ronda_yellow mx-auto" /> : <IoMenu className="text-otra_ronda_yellow  mx-auto" />}
-          </button>
-        </div>
-      </motion.div>
-    </nav>
+              {/* NOSOTROS */}
+              <li
+                className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
+                onClick={handleMenuItemClick}
+              >
+                <IoPeopleOutline className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px] lg:text-2xl" />
+                <Link href="/nosotros" className="">
+                  <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">Nosotros</p>
+                </Link>
+              </li>
+
+              {/* CONTACTO */}
+              <li
+                className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
+                onClick={handleMenuItemClick}
+              >
+                <BsTelephone className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px]" />
+                <Link href="/contacto" className="" >
+                  <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">Contacto</p>
+                </Link>
+
+              </li>
+
+
+            </ul>
+
+          </div>
+          <div className="flex  my-auto md:hidden text-3xl pr-6">
+            <button className="mx-auto" onClick={handleClick}>
+              {isOpen ? <IoClose className="text-otra_ronda_yellow mx-auto" /> : <IoMenu className="text-otra_ronda_yellow  mx-auto" />}
+            </button>
+          </div>
+        </motion.div>
+      </nav>
+    </div>
 
   )
 }

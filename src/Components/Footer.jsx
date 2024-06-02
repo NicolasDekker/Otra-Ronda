@@ -7,9 +7,9 @@ import { LuFacebook } from "react-icons/lu";
 const Footer = () => {
   return (
     <footer>
-      <div id="contenedor" className="bg-black h-20 flex justify-between">
+      <div id="contenedor" className="bg-black h-20 flex justify-between border-t-[3px] border-yellow-500">
         <div id="logo" className="pl-6 md:pl-10 flex my-auto">
-          <Link href="#home">
+          <Link href="/">
             <Image
               src="/img/logo-otra-ronda.webp"
               width={150}
