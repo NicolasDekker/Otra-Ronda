@@ -16,7 +16,7 @@ const image9 = '/img/logo-schweppes.webp';
 function Marcas() {
     const images = [ image1, image2, image3, image4, image5, image6, image7, image8, image9 ];
     return (
-        <div id="nosotros" className='bg-yellow-100'>
+        <div id="nosotros" className='bg-yellow-100 mt-20'>
             <Ticker duration={15} direction={-1}>
                 {images.map((item, index) => (
                     <div  key={index} className=" w-16 md:w-[101px] mx-5 md:mx-20 my-auto py-8">
