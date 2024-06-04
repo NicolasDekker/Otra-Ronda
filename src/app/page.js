@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
 import Navbar from '@/Components/Navbar'
-import Home from '@/Components/Home'
-import Fototeca from '@/Components/Fototeca'
+import Home from '@/Components/Home'/* 
+import Fototeca from '@/Components/Fototeca' */
 import TickerSobreNos from '@/Components/TickerSobreNos'
 import Footer from '@/Components/Footer'
 import './App.css';
@@ -13,8 +13,8 @@ const homePage = () => {
     <div>
       <title>Otra Ron'da</title>
       <Navbar />
-      <Home />
-      <Fototeca />
+      <Home />{/* 
+      <Fototeca /> */}
       <TickerSobreNos />
       <Footer /> 
     </div>
