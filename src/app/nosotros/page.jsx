@@ -11,8 +11,8 @@ const homePage2 = () => {
       <div>
         <title>Otra Ron'da</title>
         <Navbar />
-        <Marcas />
         <SobreNosotros />
+        <Marcas />
         <Footer /> 
     </div>
     );
