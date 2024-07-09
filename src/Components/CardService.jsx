@@ -12,8 +12,6 @@ const CardService = ({ titulo1, titulo2, trago1, descripcion1, trago2, descripci
                         <h2 className="pt-5 pl-5 text-7xl">{titulo1}</h2>
                         <h3 className="pl-7 text-3xl">{titulo2}</h3>
                     </div>
-                    
-                    
                 </section>
                 <section className="md:h-[52%] 2md:h-[50%] lg:h-[60%] 2xl:h-[53%] 3xl:h-[53%]">
                     <h4 className="text-center text-3xl pt-5 text-yellow-500 font-medula">Cócteles</h4>
@@ -60,7 +58,7 @@ const CardService = ({ titulo1, titulo2, trago1, descripcion1, trago2, descripci
                         />
                     </div>
                     <div className="w-[50%] flex justify-center">
-                        <button className="text-otra_ronda_yellow bg-black rounded-xl p-2 mt-4 m-2 w-32 duration-500 hover:bg-otra_ronda_yellow hover:text-black  text-[16px] md:text-[17px] border-2 border-yellow-500">
+                        <button className="text-otra_ronda_yellow bg-black rounded-xl p-2 mt-4 m-2 w-32 duration-500 hover:bg-otra_ronda_yellow hover:text-black  text-[16px] md:text-[17px] border-2 border-yellow-500 hover:font-bold">
                             <Link 
                                 href="https://wa.me/5491154867763?text=Hola%2C%20%C2%BFC%C3%B3mo%20est%C3%A1s%3F%20Quisiera%20consultar%20por..."
                                 target="_blank"

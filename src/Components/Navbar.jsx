@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import { BsTelephone } from "react-icons/bs";
 import { BiDrink } from "react-icons/bi";
 import { IoPeopleOutline } from "react-icons/io5";
+import { FaRegNewspaper } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // menu cerrado
@@ -107,6 +108,17 @@ const Navbar = () => {
                 <BsTelephone className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px]" />
                 <Link href="/contacto" className="" >
                   <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">Contacto</p>
+                </Link>
+
+              </li>
+              {/* NOVEDADES */}
+              <li
+                className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
+                onClick={handleMenuItemClick}
+              >
+                <FaRegNewspaper className="mb-1 md:mb-0 mr-1 text-2xl md:text-[22px]" />
+                <Link href="/novedades" className="" >
+                  <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">Novedades</p>
                 </Link>
 
               </li>
