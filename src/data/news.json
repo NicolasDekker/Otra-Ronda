@@ -1,0 +1,54 @@
+{
+    "novedades": [
+      {
+        "id": "1",
+        "titulo": "Barra-1",
+        "imagen": "/img/logo-otra-ronda.webp",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, veniam? Saepe obcaecati ipsa blanditiis consequuntur perspiciatis quae nisi dicta, earum distinctio animi unde corporis nemo! Veniam dolorum provident corporis unde."
+      },
+      {
+        "id": "2",
+        "titulo": "Barra-2",
+        "imagen": "/img/logo-coca.webp",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, veniam? Saepe obcaecati ipsa blanditiis consequuntur perspiciatis quae nisi dicta, earum distinctio animi unde corporis nemo! Veniam dolorum provident corporis unde."
+      },
+      {
+        "id": "4",
+        "titulo": "Barra-2",
+        "imagen": "/img/logo-coca.webp",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, veniam? Saepe obcaecati ipsa blanditiis consequuntur perspiciatis quae nisi dicta, earum distinctio animi unde corporis nemo! Veniam dolorum provident corporis unde."
+      },
+      {
+        "id": "3",
+        "titulo": "Barra-3",
+        "imagen": "/img/logo-sprite.webp",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. , veniam? Saepe obcaecati ipsa blanditiis consequuntur perspiciatis quae nisi dicta, earum distinctio animi unde corporis nemo! Veniam dolorum provident corporis unde."
+      },
+      {
+        "id": "5",
+        "titulo": "Barra-2",
+        "imagen": "/img/logo-coca.webp",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, veniam? Saepe obcaecati ipsa blanditiis consequuntur perspiciatis quae nisi dicta, earum distinctio animi unde corporis nemo! Veniam dolorum provident corporis unde."
+      },
+      {
+        "id": "6",
+        "titulo": "Barra-2",
+        "imagen": "/img/logo-coca.webp",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, veniam? Saepe obcaecati ipsa blanditiis consequuntur perspiciatis quae nisi dicta, earum distinctio animi unde corporis nemo! Veniam dolorum provident corporis unde."
+      },
+      {
+        "id": "7",
+        "titulo": "Barra-3",
+        "imagen": "/img/logo-sprite.webp",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. , veniam? Saepe obcaecati ipsa blanditiis consequuntur perspiciatis quae nisi dicta, earum distinctio animi unde corporis nemo! Veniam dolorum provident corporis unde."
+      },
+      {
+        "id": "8",
+        "titulo": "Barra-3",
+        "imagen": "/img/logo-sprite.webp",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. , veniam? Saepe obcaecati ipsa blanditiis consequuntur perspiciatis quae nisi dicta, earum distinctio animi unde corporis nemo! Veniam dolorum provident corporis unde."
+      }
+      
+    ]
+  }
+  

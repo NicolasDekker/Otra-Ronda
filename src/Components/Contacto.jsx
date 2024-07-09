@@ -78,7 +78,7 @@ const Contacto = () => {
 
     // enviar mail
     try {
-      const response = fetch("https://formsubmit.co/ajax/Tomyt@live.com.ar", {
+      const response = fetch("https://formsubmit.co/ajax/otraronda.ok@hotmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
