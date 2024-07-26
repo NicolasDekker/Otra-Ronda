@@ -18,9 +18,9 @@ function TickerSobreNos() {
     const images = [ image1, image2, image3, image4, image5, image6, image7, image8, image9, image10,  image11];
     return (
         <div className='bg-yellow-100'>
-            <Ticker duration={15} direction={1} >
+            <Ticker duration={20} direction={1} >
                 {images.map((item, index) => (
-                    <div key={index} className="w-20 md:w-40 mx-5 md:mx-20 my-auto py-8">
+                    <div key={index} className="w-20 md:w-36 mx-5 md:mx-14 my-auto py-4">
                         <Image
                             src={item}
                             alt={`Image ${index}`}

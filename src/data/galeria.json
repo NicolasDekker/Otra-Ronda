@@ -1,0 +1,73 @@
+{
+    "galeria": [
+      {
+        "id": "1",
+        "imagen": "/img/img-fototeca.webp"
+      },
+      {
+        "id": "2",
+        "imagen": "/img/img-fototeca-2.webp"
+      },
+      {
+        "id": "3",
+        "imagen": "/img/img-fototeca-3.webp"
+      },
+      {
+        "id": "4",
+        "imagen": "/img/img-fototeca-4.webp"
+      },
+      {
+        "id": "5",
+        "imagen": "/img/img-fototeca-5.webp"
+      },
+      {
+        "id": "6",
+        "imagen": "/img/img-fototeca-6.webp"
+      },
+      {
+        "id": "7",
+        "imagen": "/img/img-fototeca-7.webp"
+      },
+      {
+        "id": "8",
+        "imagen": "/img/img-fototeca-8.webp"
+      },
+      {
+        "id": "9",
+        "imagen": "/img/img-fototeca-9.webp"
+      },
+      {
+        "id": "10",
+        "imagen": "/img/img-fototeca-10.webp"
+      },
+      {
+        "id": "11",
+        "imagen": "/img/img-fototeca-11.webp"
+      },
+      {
+        "id": "12",
+        "imagen": "/img/img-fototeca-12.webp"
+      },
+      {
+        "id": "13",
+        "imagen": "/img/img-fototeca-13.webp"
+      },
+      {
+        "id": "14",
+        "imagen": "/img/img-fototeca-14.webp"
+      },
+      {
+        "id": "15",
+        "imagen": "/img/img-fototeca-15.webp"
+      },
+      {
+        "id": "17",
+        "imagen": "/img/img-fototeca-17.webp"
+      },
+      {
+        "id": "16",
+        "imagen": "/img/img-fototeca-16.webp"
+      }
+    ]
+  }
+  
