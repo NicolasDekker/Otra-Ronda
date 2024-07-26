@@ -112,7 +112,7 @@ const Navbar = () => {
 
               </li>
               {/* NOVEDADES */}
-              <li
+              {/* <li
                 className="w-full p-3 py-4 mt-2 md:text-base md:w-auto md:border-0 flex"
                 onClick={handleMenuItemClick}
               >
@@ -121,7 +121,7 @@ const Navbar = () => {
                   <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">Novedades</p>
                 </Link>
 
-              </li>
+              </li> */}
 
 
             </ul>

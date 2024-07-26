@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { swiffyslider } from 'swiffy-slider';
 import "swiffy-slider/css";
 
-const Productos = () => {
+const Novedades = () => {
     const novedadesData = data.novedades;
     const [itemShowClass, setItemShowClass] = useState("slider-item-show4");
 
@@ -78,7 +78,7 @@ const Productos = () => {
     )
 }
 
-export default Productos
+export default Novedades
 
 
 
