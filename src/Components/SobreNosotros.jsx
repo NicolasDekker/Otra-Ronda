@@ -23,7 +23,7 @@ const SobreNosotros = () => {
   return (
     <section
       
-      className="h-[475px] bg-cover bg-center flex p-5 w-auto "
+      className="h-[480px] bg-cover bg-center flex p-5 w-auto "
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}
@@ -31,7 +31,7 @@ const SobreNosotros = () => {
 
       <div className="flex flex-col justify-center">
         <div className="h-96">
-          <p className="text-5xl md:text-7xl text-center font-medula text-white">
+          <p className="text-5xl mb-10 md:text-7xl text-center font-medula text-white">
             Sobre Nosotros
           </p>
           <div className="p-3 flex ">
