@@ -121,7 +121,7 @@ const Navbar = () => {
                   <p className="hover:underline text-[22px] md:text-[19px] lg:text-[22px] decoration-[3px] pt-1 md:pt-0">Novedades</p>
                 </Link>
 
-              </li> */}
+              </li>  */}
 
 
             </ul>
