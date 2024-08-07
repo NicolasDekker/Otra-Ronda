@@ -21,9 +21,9 @@
         "descripcion7": "Cachaça Pitu, Gajos de Lima, Azucar Blanca, Hielo Escamado, Penacho de Menta fresca.",
         "trago8": "Caipirinha de Maracuya",
         "descripcion8": "Cachaça Pitu, Gajos de Lima, Maracuya, Azucar Blanca, Hielo Escamado, Penacho de Menta fresca.",
-        "bebida1": "Agua Sin Gas",
-        "bebida2": "Limonada",
-        "bebida3": "Naranjada"
+        "bebida1": "Limonada",
+        "bebida2": "Jugo de Naranja",
+        "bebida3": "Agua Mineral"
       },
       {
         "id": "Barra-2",
@@ -46,9 +46,9 @@
         "descripcion7": "Cachaça Pitu, Gajos de Lima, Azucar Blanca, Hielo Escamado, Penacho de Menta fresca.",
         "trago8": "Caipirinha de Maracuya",
         "descripcion8": "Cachaça Pitu, Gajos de Lima, Maracuya, Azucar Blanca, Hielo Escamado, Penacho de Menta fresca.",
-        "bebida1": "Agua Sin Gas",
-        "bebida2": "Limonada",
-        "bebida3": "Naranjada"
+        "bebida1": "Limonada",
+        "bebida2": "Jugo de Naranja",
+        "bebida3": "Agua Mineral"
       },
       {
         "id": "Barra-3",
@@ -71,30 +71,37 @@
         "descripcion7": "Vodka, Trozos de Manzana, Jugo de Naranja, Ganadina, Hielo Escamado.",
         "trago8": "Gin Tonic de Frutos Rojos",
         "descripcion8": "Gin Brighton, Pulpa de Frutos Rojos, Agua Tonica.",
-        "bebida1": "Agua Sin Gas",
-        "bebida2": "Limonada",
-        "bebida3": "Naranjada"
+        "bebida1": "Limonada",
+        "bebida2": "Jugo de Naranja",
+        "bebida3": "Agua Mineral"
       },
       {
         "id": "Barra-4",
         "categoria": "Barra Reducida",
         "titulo1": "Barra",
-        "titulo2": "Reducida",
-        "trago1": "Fernet con Coca-Cola",
-        "descripcion1": "Fernet,  Coca-Cola Regular.",
-        "trago2": "Garibaldi",
-        "descripcion2": "Campari, Jugo de Naranja, 1/2 Rodaja de Naranja.",
-        "trago3": "Gin Tonic",
-        "descripcion3": "Gin Brighton, Agua Tónica Schweppes, Romero fresco, Rodaja de lima y limon.",
-        "trago4": "Campari con pomelo",
-        "descripcion4": "Campari, Jugo de Pomelo, lonja de peepino fresco.",
-        "trago6": "Caipirinha",
-        "descripcion6": "Cachaça Pitu, Gajos de Lima, Azucar Blanca, Hielo Escamado, Penacho de Menta fresca.",
-        "trago9": "Caipirinha de Maracuya",
-        "descripcion9": "Cachaça Pitu, Gajos de Lima, Maracuya, Azucar Blanca, Hielo Escamado, Penacho de Menta fresca.",
-        "bebida1": "Agua Sin Gas",
-        "bebida2": "Limonada",
-        "bebida3": "Naranjada"
+        "titulo2": "Mixology",
+        "titulo3": "Tragos de autor",
+        "trago1": "Caipirinha",
+        "descripcion1": "Cachaça Pitu, Gajos de Lima, Azucar Blanca, Hielo Escamado, Penacho de Menta fresca.",
+        "trago2": "Caipirinha de Maracuya",
+        "descripcion2": "Cachaça Pitu, Gajos de Lima, Maracuya, Azucar Blanca, Hielo Escamado, Penacho de Menta fresca.",
+        "trago3": "Garibaldi",
+        "descripcion3": "Campari, Jugo de Naranja, 1/2 Rodaja de Naranja.",
+        "trago4": "Fernet con Coca-Cola",
+        "descripcion4": "Fernet,  Coca-Cola Regular.",
+        "trago6": "Gin paff",
+        "descripcion6": "Gin Brighton, Agua Tónica Schweppes o Sprite, Almibar de Flynn Paff.",
+        "trago7": "Gin palitos de la selva",
+        "descripcion7": "Gin Brighton, Agua Tónica Schweppes o Sprite, Almibar de Palitos de la selva.",
+        "trago8": "Gin de beldent",
+        "descripcion8": "Gin Brighton, Agua Tónica Schweppes o Sprite, Almibar de Beldent",
+        "trago9": "Gin de finas hierbas",
+        "descripcion9": "Gin Brighton, Agua Tónica Schweppes, Romero fresco, Pimienta Roja y Menta.",
+        "trago10": "Star vodka caramel",
+        "descripcion10": "Vodka Smirnoff, Almibar 2 en 1, Jugo de narnaja o Limon, menta y Rodaja de Limón.",
+        "bebida1": "Limonada",
+        "bebida2": "Jugo de Naranja",
+        "bebida3": "Agua Mineral"
       }
     ]
   }
