@@ -5,7 +5,8 @@ import { useState, useEffect } from 'react';
 import { swiffyslider } from 'swiffy-slider';
 import "swiffy-slider/css";
 
-const Novedades = () => {
+const Novedades = (props) => {
+    const {router} = props
     const novedadesData = data.novedades;
     const [itemShowClass, setItemShowClass] = useState("slider-item-show4");
 
@@ -52,9 +53,8 @@ const Novedades = () => {
                             <li className="slide-visible px-5">
                                 <div key={index} className='m-12 flex justify-center'>
                                     <CardNovedades
-                                        titulo={novedades.titulo}
-                                        imagen={novedades.imagen}
-                                        descripcion={novedades.descripcion}
+                                        router={router}
+                                        {...novedades}
                                     />
                                 </div>
                             </li>

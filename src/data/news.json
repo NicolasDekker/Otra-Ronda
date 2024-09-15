@@ -1,45 +1,77 @@
 {
-    "novedades": [
-      {
-        "id": "1",
-        "titulo": "Barras para XV",
-        "imagen": "/img/logo-otra-ronda.webp",
-        "descripcion": "En Otra Ron´da, nos especializamos en ofrecer un servicio de barras para XV que destaca por su calidad, profesionalismo y atención al detalle. Sabemos que un evento de quinceañera es un momento único y especial en la vida de cualquier joven, y por eso nos dedicamos a hacer de este día algo inolvidable. Nuestras barras están diseñadas para impresionar y deleitar a todos los invitados, desde los más jóvenes hasta los adultos.",
-        "titulo2": "Servicio profesional y personalizado para tus eventos",
-        "descripcion2": "Otra Ron´da"
-      },
-      {
-        "id": "2",
-        "titulo": "Barras para fiestas",
-        "imagen": "/img/logo-coca.webp",
-        "descripcion": "Otra Ron'da se especializa en ofrecer barras para fiestas, proporcionando una experiencia única y personalizada para cualquier tipo de evento. Sus servicios de coctelería se dividen en diferentes categorías que se adaptan a las necesidades y gustos de sus clientes.",
-        "titulo2": "Coctelería personalizada para todo tipo de evento",
-        "descripcion2": "Otra Ron´da se"
-      },
-      {
-        "id": "3",
-        "titulo": "Barras para eventos empresariales",
-        "imagen": "/img/logo-coca.webp",
-        "descripcion": "Si estás buscando darle un toque especial a tu próximo evento corporativo, Otra Ron´da es la solución ideal con su servicio de barra para eventos empresariales. Esta empresa se especializa en ofrecer una experiencia única y personalizada para cada tipo de evento, asegurando que cada detalle esté cuidado y que tus invitados disfruten de un servicio de alta calidad.",
-        "titulo2": "Lleva tu Evento Empresarial al Siguiente Nivel con Otra Ron´da",
-        "descripcion2": "Otra Ron´da se especializa"
-      },
-      {
-        "id": "4",
-        "titulo": "Barra de tragos para eventos",
-        "imagen": "/img/logo-sprite.webp",
-        "descripcion": "Otra Ron'da se especializa en ofrecer servicios de barra de tragos para eventos, brindando una experiencia única y personalizada que garantiza que cada celebración sea inolvidable. Con un enfoque en la calidad y la creatividad, nuestra empresa se dedica a transformar cualquier ocasión en un evento especial, destacándose por su profesionalismo y atención al detalle.",
-        "titulo2": "Experiencia única en coctelería para tus celebraciones",
-        "descripcion2": "Otra Ron´da se especializa en"
-      },
-      {
-        "id": "5",
-        "titulo": "Barra de tragos para casamientos",
-        "imagen": "/img/logo-coca.webp",
-        "descripcion": "Organizar un casamiento implica cuidar hasta el más mínimo detalle, y la barra de tragos se ha convertido en un elemento esencial para que la celebración sea un éxito. Otra Ron´da, con su destacado servicio de barra de tragos para casamientos, se encarga de brindar una experiencia única y personalizada que dejará una impresión duradera en tus invitados.",
-        "titulo2": "La barra de tragos perfecta para un día inolvidable",
-        "descripcion2": "Otra Ron´da se especializa en crear"
-      }
-    ]
-  }
-  
+  "novedades": [
+    {
+      "id": "1",
+      "titulo": "Barras para XV",
+      "imagen": "/img/logo-otra-ronda.webp",
+      "imagen2": "/img/barra-fiesta.webp",
+      "descripcion": "En Otra Ron´da, nos especializamos en ofrecer un servicio de barras para XV que destaca por su calidad, profesionalismo y atención al detalle. Sabemos que un evento de quinceañera es un momento único y especial en la vida de cualquier joven, y por eso nos dedicamos a hacer de este día algo inolvidable. Nuestras barras están diseñadas para impresionar y deleitar a todos los invitados, desde los más jóvenes hasta los adultos.",
+      "titulo2": "Servicio profesional y personalizado para tus eventos",
+      "descripcion2": [
+        "Nos encargamos de todo lo necesario para que tu evento sea un éxito rotundo. Nuestro equipo de bartenders profesionales está capacitado para preparar una amplia variedad de bebidas, tanto alcohólicas como sin alcohol, adaptándose a las preferencias de cada invitado. Además, ofrecemos opciones personalizadas para que cada barra sea única y refleje el estilo y temática de tu evento.", 
+        "Otra Ron´da no solo se distingue por la calidad de sus bebidas, sino también por el diseño y presentación de sus barras. Cada barra es montada con cuidado, utilizando materiales de primera calidad y decoraciones elegantes que aportan un toque de sofisticación a tu celebración. Ya sea que prefieras un estilo moderno, clásico o temático, nuestro equipo trabajará contigo para crear una barra que se adapte perfectamente a tus necesidades.", 
+        "En nuestro sitio web, puedes encontrar más detalles sobre los diferentes servicios que ofrecemos, así como ejemplos de eventos anteriores en los que hemos trabajado. No importa el tamaño de tu evento o tus necesidades específicas, estamos aquí para ayudarte a planificar y ejecutar la barra perfecta para tu XV.", 
+        "Para más información y para reservar nuestro servicio de barras para XV, visita nuestro sitio web. En Otra Ron´da, estamos comprometidos a hacer de tu evento una experiencia memorable y llena de sabor. ¡Déjanos ser parte de tu celebración y disfrutarás de un servicio de barras que superará todas tus expectativas!"
+      ]
+    },
+    {
+      "id": "2",
+      "titulo": "Barras para fiestas",
+      "imagen": "/img/logo-otra-ronda.webp",
+      "imagen2": "/img/barra-fiesta.webp",
+      "descripcion": "Otra Ron'da se especializa en ofrecer barras para fiestas, proporcionando una experiencia única y personalizada para cualquier tipo de evento. Sus servicios de coctelería se dividen en diferentes categorías que se adaptan a las necesidades y gustos de sus clientes.",
+      "titulo2": "Coctelería personalizada para todo tipo de evento",
+      "descripcion2": [
+        "La barra tradicional incluye una amplia variedad de cócteles clásicos como el Fernet con Coca-Cola, el Garibaldi, y el Gin Tonic, entre otros. Estos cócteles son elaborados con ingredientes de alta calidad y técnicas tradicionales, asegurando un sabor auténtico y delicioso.",
+        " Para aquellos que buscan un toque de lujo, la barra premium ofrece cócteles como el Mojito Cubano, el Cuba Libre y la Caipirinha de Maracuyá. Estos cócteles son preparados con licores de alta gama y presentados de manera elegante para impresionar a los invitados.", 
+        "Ideal para eventos al aire libre y temáticas veraniegas, la barra tropical incluye bebidas refrescantes como la Piña Colada, los Daikiris de frutas y el Sex on the Beach. Estos cócteles destacan por sus sabores frutales y presentaciones coloridas, perfectas para crear un ambiente festivo y relajado.", 
+        "Otra Ron'da también ofrece una barra reducida para eventos más íntimos o con un presupuesto limitado, manteniendo la calidad en cada preparación. Esta opción incluye los cócteles más populares en versiones más compactas pero igualmente deliciosas.", 
+        "Además de las opciones alcohólicas, Otra Ron'da cuenta con bebidas sin alcohol como agua sin gas, limonada y naranjada, asegurando que todos los invitados puedan disfrutar de una bebida refrescante.", 
+        "Para completar la experiencia, se ofrece opciones adicionales como cervezas, champagne, y gaseosas. También brindan un descuento del 10% en la contratación de sus servicios para eventos futuros.", 
+        "Con Otra Ron'da, cada detalle está cuidadosamente planificado para ofrecer una experiencia de barras para fiestas excepcionales, adaptada a las necesidades de cada evento. Visita su página web para más información y cotizaciones."
+      ]
+    },
+    {
+      "id": "3",
+      "titulo": "Barras para eventos empresariales",
+      "imagen": "/img/logo-otra-ronda.webp",
+      "imagen2": "/img/barra-empresarial.webp",
+      "descripcion": "Si estás buscando darle un toque especial a tu próximo evento corporativo, Otra Ron´da es la solución ideal con su servicio de barra para eventos empresariales. Esta empresa se especializa en ofrecer una experiencia única y personalizada para cada tipo de evento, asegurando que cada detalle esté cuidado y que tus invitados disfruten de un servicio de alta calidad.",
+      "titulo2": "Lleva tu Evento Empresarial al Siguiente Nivel con Otra Ron´da",
+      "descripcion2": [
+        "Otra Ron´da entiende la importancia de impresionar a los asistentes y, por eso, su servicio de barra no solo se limita a ofrecer bebidas, sino que va más allá, proporcionando una experiencia completa. Los bartenders profesionales de Otra Ron´da están capacitados para preparar una amplia variedad de cócteles, adaptándose a los gustos y preferencias de los asistentes. Además, utilizan ingredientes de primera calidad para asegurar que cada bebida sea excepcional.",
+        "El servicio de barra para eventos de Otra Ron´da también incluye la personalización del menú de bebidas. Esto significa que puedes seleccionar entre una variedad de cócteles y bebidas premium, asegurando que haya algo para todos los gustos. Esta flexibilidad permite que cada evento sea único y memorable, dejando una impresión duradera en tus invitados.",
+        "Otra Ron´da se destaca no solo por la calidad de sus bebidas, sino también por su atención al detalle y profesionalismo. El equipo se encarga de todos los aspectos del servicio de barra, desde la instalación y decoración hasta la limpieza posterior al evento. Esto te permite centrarte en disfrutar de tu evento y en atender a tus invitados, sin preocupaciones adicionales.",
+        "En resumen, si deseas que tu evento corporativo se destaque y sea recordado por la calidad de sus servicios, Otra Ron´da es la elección perfecta. Su servicio de barra para eventos empresariales garantiza una experiencia excepcional, personalizada y de alta calidad que dejará a todos tus invitados impresionados."
+      ]
+    },
+    {
+      "id": "4",
+      "titulo": "Barra de tragos para eventos",
+      "imagen": "/img/logo-otra-ronda.webp",
+      "imagen2": "/img/barra-eventos.webp",
+      "descripcion": "Otra Ron'da se especializa en ofrecer servicios de barra de tragos para eventos, brindando una experiencia única y personalizada que garantiza que cada celebración sea inolvidable. Con un enfoque en la calidad y la creatividad, nuestra empresa se dedica a transformar cualquier ocasión en un evento especial, destacándose por su profesionalismo y atención al detalle.",
+      "titulo2": "Experiencia única en coctelería para tus celebraciones",
+      "descripcion2": [
+        "Nuestros servicios de barra de tragos están diseñados para adaptarse a las necesidades específicas de cada cliente. Ya sea una boda, un cumpleaños, una fiesta corporativa o cualquier otro tipo de evento, nos aseguramos de que cada cóctel servido sea una obra de arte. Contamos con un equipo de bartenders altamente capacitados que utilizan ingredientes frescos y de alta calidad para crear una variedad de bebidas que van desde los clásicos hasta los más innovadores. ",
+        "En Otra Ron'da, entendemos que cada evento es único y, por ello, ofrecemos la posibilidad de personalizar el menú de bebidas según las preferencias de nuestros clientes. Además, nos encargamos de todos los detalles logísticos, desde el montaje de la barra hasta la provisión de cristalería y otros elementos necesarios para el servicio, permitiendo a los anfitriones disfrutar de su evento sin preocupaciones.",
+        "Nuestro compromiso con la excelencia nos ha llevado a ser una de las opciones preferidas para servicios de barra de tragos para eventos. La satisfacción de nuestros clientes es nuestra prioridad, y trabajamos arduamente para superar sus expectativas en cada ocasión. Si buscas agregar un toque especial a tu próximo evento, Otra Ron'da es la elección perfecta para ti. ",
+        "Visita nuestra página web y descubre más sobre cómo podemos hacer de tu evento una experiencia memorable con nuestros servicios de barra de tragos."
+      ]
+    },
+    {
+      "id": "5",
+      "titulo": "Barra de tragos para casamientos",
+      "imagen": "/img/logo-otra-ronda.webp",
+      "imagen2": "/img/barra-casamiento.webp",
+      "descripcion": "Organizar un casamiento implica cuidar hasta el más mínimo detalle, y la barra de tragos se ha convertido en un elemento esencial para que la celebración sea un éxito. Otra Ron´da, con su destacado servicio de barra de tragos para casamientos, se encarga de brindar una experiencia única y personalizada que dejará una impresión duradera en tus invitados.",
+      "titulo2": "La barra de tragos perfecta para un día inolvidable",
+      "descripcion2": [
+        "Otra Ron´da se especializa en crear ambientes festivos y memorables, ofreciendo una amplia variedad de tragos que se adaptan a todos los gustos. Desde clásicos cócteles hasta innovadoras mezclas, su equipo de bartenders profesionales se encarga de cada detalle, garantizando un servicio de alta calidad. La empresa se destaca por su atención personalizada, trabajando estrechamente con los novios para diseñar una carta de tragos que refleje sus preferencias y estilo.",
+        "Uno de los aspectos que distingue a Otra Ron´da es su compromiso con la excelencia y la innovación. Utilizan ingredientes frescos y de primera calidad, asegurando que cada trago sea una obra de arte. Además, ofrecen opciones para todos, incluyendo cócteles sin alcohol, para que cada invitado pueda disfrutar de la experiencia. Su equipamiento moderno y elegante se integra perfectamente con la decoración del evento, añadiendo un toque de sofisticación.",
+        "La flexibilidad es otra ventaja clave de los servicios de Otra Ron´da. Pueden adaptarse a distintos tipos de eventos y tamaños de audiencia, ofreciendo soluciones personalizadas que se ajustan a las necesidades específicas de cada celebración. Ya sea un casamiento íntimo o una gran fiesta, Otra Ron´da garantiza un servicio impecable que superará tus expectativas.",
+        "El servicio de barra de tragos para casamientos de Otra Ron´da es la opción ideal para aquellos que buscan una experiencia única y de calidad en su día especial. Con su dedicación, profesionalismo y creatividad, se asegurarán de que tu casamiento sea un evento inolvidable. Visita su página web y descubre cómo pueden hacer de tu celebración algo extraordinario."
+      ]
+    }
+  ]
+}
