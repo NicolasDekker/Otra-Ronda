@@ -35,8 +35,8 @@ const Footer = () => {
       </div>
       <div className=' pt-3 bg-black flex flex-col md:justify-center md:flex-row text-sm font-medula'>
         <p className='text-white text-center font-swiss'>Otra Ron´da - Todos los derechos reservados.</p>
-        <Link target='_blank' rel="noopener noreferrer" href={"https://www.aprin.com.ar/"}>
-          <p className='text-white text-center font-swiss ml-1 hover:font-bold '>Realizado por: APRIN</p>
+        <Link target='_blank' rel="noopener noreferrer" href={"https://github.com/NicolasDekker"}>
+          <p className='text-white text-center font-swiss ml-1 hover:font-bold '>Realizado por: Nicolas Dekker</p>
         </Link>
       </div>
     </footer>
