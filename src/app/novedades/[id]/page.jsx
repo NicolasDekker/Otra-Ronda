@@ -63,7 +63,7 @@ const Detalle = () => {
 
     /*md:w-[80%] md:mx-auto*/
     return (
-        <div>
+        <div className="bg-black">
             <Navbar />
             <section className="h-auto bg-black">
                 <div className="text-center my-8 text-otra_ronda_yellow text-[25px]  md:text-[40px] font-medula font-bold"> {detail?.titulo}</div>
