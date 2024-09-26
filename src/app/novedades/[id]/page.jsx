@@ -65,7 +65,7 @@ const Detalle = () => {
     return (
         <div>
             <Navbar />
-            <section className="h-auto ">
+            <section className="h-auto bg-black">
                 <div className="text-center my-8 text-otra_ronda_yellow text-[25px]  md:text-[40px] font-medula font-bold"> {detail?.titulo}</div>
                 <div className='mx-auto border-t-[3px] w-[70%] md:w-[60%] rounded-xl border-gray-400'> </div>
                 <div className="flex flex-col mx-auto w-[95%]">

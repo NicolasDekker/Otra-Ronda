@@ -56,7 +56,7 @@ const CardNovedades = ({ id, titulo, imagen, descripcion }) => {
                             </div>
                         </section>
                         <section className="">
-                            <div className=" text-justify md:text-lg" dangerouslySetInnerHTML={{ __html: highlightWord(descripcion, 'barras para XV', 'barras para fiestas', 'barra para eventos empresariales', 'barra de tragos para eventos', 'barra de tragos para casamientos') }}></div>
+                            <div className="text-white text-justify md:text-lg" dangerouslySetInnerHTML={{ __html: highlightWord(descripcion, 'barras para XV', 'barras para fiestas', 'barra para eventos empresariales', 'barra de tragos para eventos', 'barra de tragos para casamientos') }}></div>
                         </section>
                     </div>
                     <div className="flex justify-center pb-4">
