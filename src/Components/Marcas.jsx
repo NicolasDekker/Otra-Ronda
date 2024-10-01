@@ -14,28 +14,30 @@ const image9 = '/img/logo-schweppes.webp';
 
 
 function Marcas() {
-    const images = [ image1, image2, image3, image4, image5, image6, image7, image8, image9 ];
+    const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9];
     return (
-        <div id="nosotros" className='bg-yellow-100 mt-20'>
-            <Ticker duration={15} direction={-1}>
-                {images.map((item, index) => (
-                    <div  key={index} className=" w-16 md:w-[101px] mx-5 md:mx-20 my-auto py-8">
-                        <Image
-                        src={item}
-                        alt={`Image ${index}`}
-                        width={250}
-                        height={250}
-                        style={{
-                            backgroundColor: item,
-                            display: 'flex',
-                            justifyContent:'space-between',
-                        }}
-                    />
-                    </div>
-                    
-                ))}
-            </Ticker>
-        </div>
+        <section className='bg-black pt-[85px]'>
+            <div id="nosotros" className='bg-yellow-100'>
+                <Ticker duration={15} direction={-1}>
+                    {images.map((item, index) => (
+                        <div key={index} className=" w-16 md:w-[101px] mx-5 md:mx-20 my-auto py-8">
+                            <Image
+                                src={item}
+                                alt={`Image ${index}`}
+                                width={250}
+                                height={250}
+                                style={{
+                                    backgroundColor: item,
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                }}
+                            />
+                        </div>
+
+                    ))}
+                </Ticker>
+            </div>
+        </section>
     );
 }
 export default Marcas;
