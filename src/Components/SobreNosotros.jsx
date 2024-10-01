@@ -29,7 +29,7 @@ const SobreNosotros = () => {
       }}
     >
 
-      <div className="flex flex-col justify-center">
+      <div className=" flex flex-col justify-center">
         <div className="h-96">
           <p className="text-5xl mb-10 md:text-7xl text-center font-medula text-white">
             Sobre Nosotros

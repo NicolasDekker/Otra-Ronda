@@ -65,11 +65,11 @@ const Detalle = () => {
     return (
         <div className="bg-black">
             <Navbar />
-            <section className="h-auto bg-black">
+            <section className="h-auto bg-black text-white">
                 <div className="text-center my-8 text-otra_ronda_yellow text-[25px]  md:text-[40px] font-medula font-bold"> {detail?.titulo}</div>
                 <div className='mx-auto border-t-[3px] w-[70%] md:w-[60%] rounded-xl border-gray-400'> </div>
                 <div className="flex flex-col mx-auto w-[95%]">
-                    <h2 className="mx-5 text-justify mt-8" dangerouslySetInnerHTML={{ __html: highlightWord(detail?.descripcion, 'barras para XV', 'barras para fiestas', 'barra para eventos empresariales', 'barra de tragos para eventos', 'barra de tragos para casamientos') }}></h2>
+                    <h2 className="mx-5 text-justify mt-8 " dangerouslySetInnerHTML={{ __html: highlightWord(detail?.descripcion, 'barras para XV', 'barras para fiestas', 'barra para eventos empresariales', 'barra de tragos para eventos', 'barra de tragos para casamientos') }}></h2>
                     <section className="md:flex md:flex-row">
                         <div className="mx-20 sm:mx-44 md:mx-0">
                             <Image
