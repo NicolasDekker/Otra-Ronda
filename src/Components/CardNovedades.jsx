@@ -41,15 +41,15 @@ const CardNovedades = ({ id, titulo, imagen, descripcion }) => {
                     <div>
                         <section className="flex justify-between flex-row text-white">
                             <div className="font-medula">
-                                <h2 className="py-5 pl-5 text-[25px] text-otra_ronda_yellow">{titulo}</h2>
+                                <h2 className="pt-5 pl-5 text-[25px] text-otra_ronda_yellow">{titulo}</h2>
                             </div>
                         </section>
                         <section className="my-auto">
-                            <div className="flex justify-center h-44">
+                            <div className="my-5 flex justify-center h-44">
                                 <Image
                                     src={imagen}
-                                    width={300}
-                                    height={150}
+                                    width={320}
+                                    height={170}
                                     alt="Logo-Footer"
                                     className=""
                                 />
