@@ -3,17 +3,17 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const CardService = ({ titulo1, titulo2, titulo3, trago1, descripcion1, trago2, descripcion2, trago3, descripcion3, trago4, descripcion4, trago5, descripcion5, trago6, descripcion6, trago7, descripcion7, trago8, descripcion8, trago9, descripcion9, trago10, descripcion10, bebida1, bebida2, bebida3 }) => {
+const CardService = ({ titulo1, titulo2, titulo3, trago1, descripcion1, trago2, descripcion2, trago3, descripcion3, trago4, descripcion4, trago5, descripcion5, trago6, descripcion6, trago7, descripcion7, trago8, descripcion8, trago9, descripcion9, trago10, descripcion10, bebida1, bebida2, bebida3, bebida4, bebida5, bebida6, bebida7, Tituloautor }) => {
     return (
         <section className=" flex justify-center p-5" >
             <div className=" rounded-xl hover:border-2 hover:border-yellow-500 w-80 md:w-[370px] h-auto md:h-[870px] 3xl:h-[800px] 2md:h-[900px] pb-4 bg-white bg-opacity-5">
                 <section className="flex justify-between flex-row text-white">
                     <div className="h-[20%] w-[50%] font-medula">
                         <h2 className="pt-5 pl-5 text-7xl">{titulo1}</h2>
-                        <h3 className="pl-7 text-3xl">{titulo2}</h3>
+                        <h3 className="pl-7 text-4xl">{titulo2}</h3>
                     </div>
                 </section>
-                <section className="md:h-[52%] 2md:h-[50%] lg:h-[60%] 2xl:h-[53%] 3xl:h-[53%]">
+                <section className="md:h-[52%] 2md:h-[50%] lg:h-[60%] 2xl:h-[53%] 3xl:h-[53%]">{/* 3xl:h-[53%] */}
                     <div className='flex flex-row px-4 justify-between' >
                         <h4 className="text-center text-3xl pt-2 text-yellow-500 font-medula">Cócteles</h4>
                         <h4 className="text-center text-3xl pt-2 text-yellow-500 font-medula">{titulo3}</h4>
@@ -31,7 +31,7 @@ const CardService = ({ titulo1, titulo2, titulo3, trago1, descripcion1, trago2, 
                             <li className="text-[14px]">{trago5}</li>
                             <li className="text-white text-[12px]">{descripcion5}</li>
                         </ul>
-                        
+
                         <ul className=" pl-4 w-[50%] pr-2 text-yellow-500">
                             <li className="text-[14px]">{trago6}</li>
                             <li className="text-white text-[12px]">{descripcion6}</li>
@@ -47,12 +47,25 @@ const CardService = ({ titulo1, titulo2, titulo3, trago1, descripcion1, trago2, 
                     </div>
                 </section>
                 <section className="h-[25%]">
-                    <h4 className=" pr-40 text-center text-3xl text-yellow-500 font-medula">Sin Alcohol</h4>
-                    <ul className="pr-40 text-white text-center text-[14px]">
-                        <li className="">{bebida1}</li>
-                        <li className="">{bebida2}</li>
-                        <li className="">{bebida3}</li>
-                    </ul>
+                    <div className="flex flex-row justify-between">
+                        <div className="pl-5">
+                            <h4 className="text-xl md:text-2xl text-yellow-500 font-medula">{Tituloautor}</h4>
+                            <ul className=" text-white text-center text-[14px]">
+                                <li className="">{bebida4}</li>
+                                <li className="">{bebida5}</li>
+                                <li className="">{bebida6}</li>
+                                <li className="">{bebida7}</li>
+                            </ul>
+                        </div>
+                        <div className="pr-5">
+                            <h4 className="text-xl md:text-2xl text-yellow-500 font-medula">Sin Alcohol</h4>
+                            <ul className=" text-white text-center text-[14px]">
+                                <li className="">{bebida1}</li>
+                                <li className="">{bebida2}</li>
+                                <li className="">{bebida3}</li>
+                            </ul>
+                        </div>
+                    </div>
                     <section className="flex pt-10 ">
                         <div className="flex w-[50%] justify-center">
                             <Image

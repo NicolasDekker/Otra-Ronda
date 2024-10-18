@@ -15,7 +15,7 @@ const Servicios = () => {
       id="servicios"
       className="h-auto flex flex-col items-center p-5 w-auto pb-8 bg-bg_otra_ronda_servicios"
     >
-      <h2 className="text-center mt-8 text-5xl md:text-7xl font-medula">Servicios</h2>
+      <h2 className="text-center mt-8 text-5xl md:text-7xl font-medula">Servicios de Barra</h2>
       <div className="flex flex-col md:mt-16 md:flex-row md:flex-wrap">
         {serviciosData.map((servicio, index) => (
           <div key={index} className="w-full md:w-1/2 xl:w-1/4">
@@ -47,6 +47,11 @@ const Servicios = () => {
               bebida1={servicio.bebida1}
               bebida2={servicio.bebida2}
               bebida3={servicio.bebida3}
+              bebida4={servicio.bebida4}
+              bebida5={servicio.bebida5}
+              bebida6={servicio.bebida6}
+              bebida7={servicio.bebida7}
+              Tituloautor={servicio.Tituloautor}
             />
           </div>
         ))}
